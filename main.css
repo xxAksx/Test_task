@@ -48,6 +48,10 @@ body {
     background: #172033;
     margin-top: 12px;
 }
+.sidebar-item:hover {
+    border-radius: 10px;
+    background: #2563EB;
+}
 .item {
     margin-left: 18px;
 }
@@ -71,6 +75,7 @@ body {
     position: relative;
     top: 200px;
 }
+
 #collapse-text {
     color: #94A3B8;
     font-family: Inter;
@@ -78,4 +83,7 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 19px; /* 146.154% */
+}
+#collapse-text:hover {
+    color: c#c7d4e7;
 }
