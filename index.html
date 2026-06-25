@@ -7,489 +7,446 @@
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>
-    <header>
-        <div>
-            <div class="header-element">
-                <svg class="header1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M5 7H19M5 12H19M5 17H19" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-                <span class="header1" id="head-text">Реестр заявок</span>
-                <div id="right-elem-head">
-                    <svg id="svg_head" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                        <path d="M10.0834 15.5833C13.1209 15.5833 15.5834 13.1209 15.5834 10.0833C15.5834 7.04577 13.1209 4.58333 10.0834 4.58333C7.04581 4.58333 4.58337 7.04577 4.58337 10.0833C4.58337 13.1209 7.04581 15.5833 10.0834 15.5833Z" stroke="#0F172A" stroke-width="2"/>
-                        <path d="M14.6666 14.6667L19.25 19.25" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    <svg id="svg_head" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
-                        <path d="M17.25 9.58333C17.25 6.325 15.0459 3.83333 11.5 3.83333C7.95421 3.83333 5.75004 6.325 5.75004 9.58333V13.4167L3.83337 16.2917H19.1667L17.25 13.4167V9.58333Z" stroke="#0F172A" stroke-width="1.8" stroke-linejoin="round"/>
-                        <path d="M9.58337 19.1667H13.4167" stroke="#0F172A" stroke-width="1.8" stroke-linecap="round"/>
-                    </svg>
-                    <svg id="svg_head" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#0F172A" stroke-width="1.8"/>
-                        <path d="M10 9.3C10.2 7.9 11.1 7 12.5 7C14 7 15 8 15 9.3C15 10.5 14.2 11.1 13.3 11.8C12.5 12.4 12 13 12 14" stroke="#0F172A" stroke-width="1.8" stroke-linecap="round"/>
-                        <path d="M12 18.1C12.6075 18.1 13.1 17.6075 13.1 17C13.1 16.3925 12.6075 15.9 12 15.9C11.3925 15.9 10.9 16.3925 10.9 17C10.9 17.6075 11.3925 18.1 12 18.1Z" fill="#0F172A"/>
-                    </svg>
-                    
-                    <div id="user-block">
-                        <div id="usrcircl">ИП</div>
-                        <div id="user-inf">
-                            <span id="user-name">Иван Петров</span>
-                            <span id="admin">Администратор</span>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                            <path d="M5.25 7.5L9 11.25L12.75 7.5" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <div id="header-divider"></div>
-        </div>
-    </header>
-    <aside class="sidebar">
+    <aside>
         <div id="sidebar-header">
-            <div id="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <g clip-path="url(#clip0_21_6)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_21_6)">
                     <path d="M12 3L21 12L12 21L3 12L12 3Z" stroke="#60A5FA" stroke-width="3"/>
                     <path d="M12 8L16 12L12 16L8 12L12 8Z" fill="#60A5FA"/>
-                    </g>
-                    <defs>
+                </g>
+                <defs>
                     <clipPath id="clip0_21_6">
-                    <rect width="24" height="24" fill="white"/>
+                        <rect width="24" height="24" fill="white"/>
                     </clipPath>
-                    </defs>
-                </svg>
-            </div>
-             <strong id="demo-admin">Demo Admin</strong>
+                </defs>
+            </svg>
+            <span>Demo Admin</span>
         </div>
-        <div id="sidebar-divider"></div>
-        <div class="sidebar-cont">
-            <div class="sidebar-item">
-                <div class="item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                        <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
-                    </svg>
-                    <span class="side-label">Заявки</span>
-                </div>
-            </div>
-            <div class="sidebar-item">
-                <div class="item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                        <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
-                    </svg>
-                    <span class="side-label">Клиенты</span>
-                </div>
-            </div>
-            <div class="sidebar-item">
-                <div class="item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                        <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
-                    </svg>
-                    <span class="side-label">Договоры</span>
-                </div>
-            </div>
-            <div class="sidebar-item">
-                <div class="item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                        <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
-                    </svg>
-                    <span class="side-label">Задачи</span>
-                </div>
-            </div>
-            <div class="sidebar-item">
-                <div class="item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                        <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
-                    </svg>
-                    <span class="side-label">Сообщения</span>
-                </div>
-            </div>
-            <div class="sidebar-item">
-                <div class="item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                        <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
-                    </svg>
-                    <span class="side-label">Файлы</span>
-                </div>
-            </div>
-            <div class="sidebar-item">
-                <div class="item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                        <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
-                    </svg>
-                    <span class="side-label">Отчёты</span>
-                </div>
-            </div>
-            <div class="sidebar-item">
-                <div class="item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                        <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
-                    </svg>
-                    <span class="side-label">Настройки</span>
-                </div>
-            </div>
-            <div class="sidebar-item">
-                <div class="item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                        <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
-                    </svg>
-                    <span class="side-label">Журнал аудита</span>
-                </div>
-            </div>
-            <div id="collapse">
+        <nav>
+            <span class="sidebar-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
+                </svg>
+                Заявки
+            </span>
+            <span class="sidebar-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
+                </svg>
+                Клиенты
+            </span>
+            <span class="sidebar-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
+                </svg>
+                Договоры
+            </span>
+            <span class="sidebar-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
+                </svg>
+                Задачи
+            </span>
+            <span class="sidebar-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
+                </svg>
+                Сообщения
+            </span>
+            <span class="sidebar-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
+                </svg>
+                Файлы
+            </span>
+            <span class="sidebar-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
+                </svg>
+                Отчёты
+            </span>
+            <span class="sidebar-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
+                </svg>
+                Настройки
+            </span>
+            <span class="sidebar-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
+                </svg>
+                Журнал аудита
+            </span>
+            <span id="collapse">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path d="M9.16667 5.83331L5 9.99998L9.16667 14.1666" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M15 5.83331L10.8333 9.99998L15 14.1666" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <span id="collapse-text">Свернуть меню</span> 
-            </div>
-        </div>
+                Свернуть меню
+            </span>
+        </nav>
     </aside>
-    <main>
-        <div class="widget-place">
-            <div class="widget">
-                <span class="widget-text">Всего заявок</span>
-                <span class="wid-num">128</span>
-                <div id="wid-bottom-place1">
-                    <span id="wid-bottom-text1">За неделю: +12</span>
-                </div>
-                <div id="wid-point1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                        <circle cx="5" cy="5" r="5" fill="#2563EB"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="widget">
-                <span class="widget-text">В работе</span>
-                <span class="wid-num">34</span>
-                <div id="wid-bottom-place2">
-                    <span id="wid-bottom-text2">26% от очереди</span>
-                </div>
-                <div id="wid-point2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                        <circle cx="5" cy="5" r="5" fill="#F97316"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="widget">
-                <span class="widget-text">Просрочено</span>
-                <span class="wid-num">7</span>
-                <div id="wid-bottom-place3">
-                    <span id="wid-bottom-text3">SLA нарушен</span>
-                </div>
-                <div id="wid-point3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                        <circle cx="5" cy="5" r="5" fill="#EF4444"/>
-                    </svg> 
-                </div>
-            </div>
-            <div class="widget">
-                <span class="widget-text">Закрыто</span>
-                <span class="wid-num">87</span>
-                <div id="wid-bottom-place4">
-                    <span id="wid-bottom-text4">68% от общего</span>
-                </div>
-                <div id="wid-point4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                        <circle cx="5" cy="5" r="5" fill="#16A34A"/>
-                    </svg>
-                </div>
-            </div>
-        </div>
-        <div class="main">
-            <div>
-                <span id="top-text1">Заявки на подключение</span>
-                <span id="top-text2">Контролируйте обращения клиентов, сроки SLA и работу ответственных менеджеров</span>
-            </div>
-            <div>
-                <span id="export">Экспорт</span>
-                <div id="create-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                        <path d="M9 3.75V14.25M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    <span id="create">Создать</span>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <span id="search">Поиск</span>
-                    <span id="status">Статус</span>
-                    <span id="type">Тип услуги</span>
-                    <span id="period">Период</span>
-                    <span id="manage">Менеджер</span>
-                </div>
-                <div>
-                    <div id="info">
-                        <span id="text-info">Имя, email, номер</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M7.33334 11.3333C9.54248 11.3333 11.3333 9.54248 11.3333 7.33334C11.3333 5.1242 9.54248 3.33334 7.33334 3.33334C5.1242 3.33334 3.33334 5.1242 3.33334 7.33334C3.33334 9.54248 5.1242 11.3333 7.33334 11.3333Z" stroke="#64748B" stroke-width="2"/>
-                            <path d="M10.6667 10.6667L14 14" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+    <div class="content">
+        <header>
+            <svg class="icons-hover" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M5 7H19M5 12H19M5 17H19" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span id="heading">Реестр заявок</span>
+            <span id="icons">
+                <svg class="icons-hover" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path d="M10.0834 15.5833C13.1209 15.5833 15.5834 13.1209 15.5834 10.0833C15.5834 7.04577 13.1209 4.58333 10.0834 4.58333C7.04581 4.58333 4.58337 7.04577 4.58337 10.0833C4.58337 13.1209 7.04581 15.5833 10.0834 15.5833Z" stroke="#0F172A" stroke-width="2"/>
+                    <path d="M14.6666 14.6667L19.25 19.25" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <svg class="icons-hover" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                    <path d="M17.25 9.58333C17.25 6.325 15.0459 3.83333 11.5 3.83333C7.95421 3.83333 5.75004 6.325 5.75004 9.58333V13.4167L3.83337 16.2917H19.1667L17.25 13.4167V9.58333Z" stroke="#0F172A" stroke-width="1.8" stroke-linejoin="round"/>
+                    <path d="M9.58337 19.1667H13.4167" stroke="#0F172A" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+                <svg class="icons-hover" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#0F172A" stroke-width="1.8"/>
+                    <path d="M10 9.3C10.2 7.9 11.1 7 12.5 7C14 7 15 8 15 9.3C15 10.5 14.2 11.1 13.3 11.8C12.5 12.4 12 13 12 14" stroke="#0F172A" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M12 18.1C12.6075 18.1 13.1 17.6075 13.1 17C13.1 16.3925 12.6075 15.9 12 15.9C11.3925 15.9 10.9 16.3925 10.9 17C10.9 17.6075 11.3925 18.1 12 18.1Z" fill="#0F172A"/>
+                </svg>
+            </span>
+            <span id="user-avatar">ИП</span>
+            <span class="user-info">
+                <span id="user-info-name">Иван Петров</span>
+                <span id="user-info-role">Администратор</span>
+            </span>
+            <svg class="icons-hover" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M5.25 7.5L9 11.25L12.75 7.5" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+        </header>
+        <main>
+            <div class="widget-container">
+                <div class="widget">
+                    <span class="widget-title">Всего заявок</span>
+                    <span class="widget-count">128</span>
+                    <span class="widget-statistic widget-one" >За неделю: +12</span>
+                    <span class="widget-indicator widget-one">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                            <circle cx="5" cy="5" r="5" fill="#2563EB"/>
                         </svg>
-                    </div>
-                    <div id="all">
-                        <span id="all-text">Все</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                            <path d="M4.375 6.25L7.5 9.375L10.625 6.25" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </span>
+                </div>
+                <div class="widget">
+                    <span class="widget-title">В работе</span>
+                    <span class="widget-count">34</span>
+                    <span class="widget-statistic widget-two">26% от очереди</span>
+                    <span class="widget-indicator widget-two">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                            <circle cx="5" cy="5" r="5" fill="#F97316"/>
                         </svg>
-                    </div>
-                    <div id="all-service">
-                        <span id="all-service-text">Все услуги</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                            <path d="M4.375 6.25L7.5 9.375L10.625 6.25" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </span>
+                </div>
+                <div class="widget">
+                    <span class="widget-title">Просрочено</span>
+                    <span class="widget-count">7</span>
+                    <span class="widget-statistic widget-three">SLA нарушен</span>
+                    <span class="widget-indicator widget-three">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                            <circle cx="5" cy="5" r="5" fill="#EF4444"/>
                         </svg>
-                    </div>
-                    <div id="date">
-                        <span id="date-text">01.06.2026 - 19.06.2026</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                            <path d="M12.75 4.5H5.25C4.42157 4.5 3.75 5.17157 3.75 6V13.5C3.75 14.3284 4.42157 15 5.25 15H12.75C13.5784 15 14.25 14.3284 14.25 13.5V6C14.25 5.17157 13.5784 4.5 12.75 4.5Z" stroke="#64748B" stroke-width="1.8"/>
-                            <path d="M6 3V6M12 3V6M3.75 7.5H14.25" stroke="#64748B" stroke-width="1.8" stroke-linecap="round"/>
+                    </span>
+                </div>
+                <div class="widget">
+                    <span class="widget-title">Закрыто</span>
+                    <span class="widget-count">87</span>
+                    <span class="widget-statistic widget-four">68% от общего</span>
+                    <span class="widget-indicator widget-four">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                            <circle cx="5" cy="5" r="5" fill="#16A34A"/>
                         </svg>
-                    </div>
-                    <div id="managers">
-                        <span id="managers-text">Все</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                            <path d="M4.375 6.25L7.5 9.375L10.625 6.25" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div id="reset">
-                        <span id="reset-text">Сброс</span>
-                    </div>
+                    </span>
                 </div>
             </div>
-            <div>
-                <div id="table-head">
-                    <span class="column1">№</span>
-                    <span class="column2">Клиент</span>
-                    <span class="column3">Email</span>
-                    <span class="column4">Услуга</span>
-                    <span class="column5">Статус</span>
-                    <span class="column6">Сумма</span>
-                    <span class="column7">Дата создания</span>
-                    <span class="column8">SLA</span>
-                    <span class="column9">Действия</span>
+            <div class="main-table">
+                <div class="table-head">
+                    <div id="table-title-container">
+                        <span id="main-table-title">Заявки на подключение</span>
+                        <span id="main-table-subtitle">Контролируйте обращения клиентов, сроки SLA и работу ответственных менеджеров</span>
+                    </div>
+                    <span class="export">Экспорт</span>
+                    <span class="create">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                            <path d="M6.25 1V11.5M1 6.25H11.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Создать
+                    </span>
                 </div>
-                <div id="table-body1">
-                    <span class="column1">1001</span>
-                    <span class="column2" id="table-usrname">Иван Петров</span>
-                    <span class="column3" id="table-mail">ivan.petrov@example.com</span>
-                    <span class="column4">Интернет</span>
-                    <span class="column5" id="active">Активна</span>
-                    <span class="column6" id="table-summ">12 400 ₽</span>
-                    <span class="column7">12.06.2026 09:15</span>
-                    <span class="column8" id="table-date">Сегодня</span>
-                    <div class="ico-block">
-                        <span class="table-ico">
+                <div class="table-navigation">
+                    <div class="table-navigation-element">
+                        <span class="title-navigation">Поиск</span>
+                        <span class="table-navigation-block nav-block1">
+                            <span class="table-navigation-content content-block1">Имя, email, номер</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                              <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
-                              <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
-                            </svg>
-                        </span>
-                        <span class="table-ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                              <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
-                              <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
-                              <path d="M8.00003 13.1333C8.62596 13.1333 9.13337 12.6259 9.13337 12C9.13337 11.3741 8.62596 10.8667 8.00003 10.8667C7.37411 10.8667 6.8667 11.3741 6.8667 12C6.8667 12.6259 7.37411 13.1333 8.00003 13.1333Z" fill="#334155"/>
+                                <path d="M7.33334 11.3333C9.54248 11.3333 11.3333 9.54248 11.3333 7.33334C11.3333 5.1242 9.54248 3.33334 7.33334 3.33334C5.1242 3.33334 3.33334 5.1242 3.33334 7.33334C3.33334 9.54248 5.1242 11.3333 7.33334 11.3333Z" stroke="#64748B" stroke-width="2"/>
+                                <path d="M10.6667 10.6667L14 14" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
                             </svg>
                         </span>
                     </div>
-                </div>
-                <div id="table-body2">
-                    <span class="column1">1002</span>
-                    <span class="column2" id="table-usrname">Мария Сидорова</span>
-                    <span class="column3" id="table-mail">maria.sid@example.com</span>
-                    <span class="column4">IPTV пакет</span>
-                    <span class="column5" id="in-work">В работе</span>
-                    <span class="column6" id="table-summ">8 900 ₽</span>
-                    <span class="column7">13.06.2026 11:42</span>
-                    <span class="column8" id="table-date">2 дня</span>
-                    <div class="ico-block">
-                        <span class="table-ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                              <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
-                              <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
-                            </svg>
-                        </span>
-                        <span class="table-ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                              <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
-                              <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
-                              <path d="M8.00003 13.1333C8.62596 13.1333 9.13337 12.6259 9.13337 12C9.13337 11.3741 8.62596 10.8667 8.00003 10.8667C7.37411 10.8667 6.8667 11.3741 6.8667 12C6.8667 12.6259 7.37411 13.1333 8.00003 13.1333Z" fill="#334155"/>
+                    <div class="table-navigation-element">
+                        <span class="title-navigation">Статус</span>
+                        <span class="table-navigation-block nav-block2">
+                            <span class="table-navigation-content content-block2">Все</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <path d="M4.375 6.25L7.5 9.375L10.625 6.25" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </span>
                     </div>
-                </div>
-                <div id="table-body3">
-                    <span class="column1">1003</span>
-                    <span class="column2" id="table-usrname">Алексей Смирнов</span>
-                    <span class="column3" id="table-mail">a.smirnov@example.com</span>
-                    <span class="column4">Поддержка</span>
-                    <span class="column5" id="waiting">Ожидает</span>
-                    <span class="column6" id="table-summ">0 ₽</span>
-                    <span class="column7">14.06.2026 16:05</span>
-                    <span class="column8" id="table-date">4 часа</span>
-                    <div class="ico-block">
-                        <span class="table-ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                              <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
-                              <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
-                            </svg>
-                        </span>
-                        <span class="table-ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                              <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
-                              <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
-                              <path d="M8.00003 13.1333C8.62596 13.1333 9.13337 12.6259 9.13337 12C9.13337 11.3741 8.62596 10.8667 8.00003 10.8667C7.37411 10.8667 6.8667 11.3741 6.8667 12C6.8667 12.6259 7.37411 13.1333 8.00003 13.1333Z" fill="#334155"/>
+                    <div class="table-navigation-element">
+                        <span class="title-navigation">Тип услуги</span>
+                        <span class="table-navigation-block nav-block3">
+                            <span class="table-navigation-content content-block3">Все услуги</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <path d="M4.375 6.25L7.5 9.375L10.625 6.25" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </span>
                     </div>
-                </div>
-                <div id="table-body4">
-                    <span class="column1">1004</span>
-                    <span class="column2" id="table-usrname">Екатерина Кузнецова</span>
-                    <span class="column3" id="table-mail">kuz@example.com</span>
-                    <span class="column4">Переезд</span>
-                    <span class="column5" id="overdue">Просрочена</span>
-                    <span class="column6" id="table-summ">3 200 ₽</span>
-                    <span class="column7">15.06.2026 10:20</span>
-                    <span class="column-day" id="table-date">-1 день</span>
-                    <div class="ico-block">
-                        <span class="table-ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                              <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
-                              <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
-                            </svg>
-                        </span>
-                        <span class="table-ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                              <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
-                              <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
-                              <path d="M8.00003 13.1333C8.62596 13.1333 9.13337 12.6259 9.13337 12C9.13337 11.3741 8.62596 10.8667 8.00003 10.8667C7.37411 10.8667 6.8667 11.3741 6.8667 12C6.8667 12.6259 7.37411 13.1333 8.00003 13.1333Z" fill="#334155"/>
+                    <div class="table-navigation-element">
+                        <span class="title-navigation">Период</span>
+                        <span class="table-navigation-block nav-block4">
+                            <span class="table-navigation-content content-block4">01.06.2026 - 19.06.2026</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M12.75 4.5H5.25C4.42157 4.5 3.75 5.17157 3.75 6V13.5C3.75 14.3284 4.42157 15 5.25 15H12.75C13.5784 15 14.25 14.3284 14.25 13.5V6C14.25 5.17157 13.5784 4.5 12.75 4.5Z" stroke="#64748B" stroke-width="1.8"/>
+                                <path d="M6 3V6M12 3V6M3.75 7.5H14.25" stroke="#64748B" stroke-width="1.8" stroke-linecap="round"/>
                             </svg>
                         </span>
                     </div>
-                </div>
-                <div id="table-body5">
-                    <span class="column1">1005</span>
-                    <span class="column2" id="table-usrname">Дмитрий Волков</span>
-                    <span class="column3" id="table-mail">d.volkov@example.com</span>
-                    <span class="column4">Интернет + ТВ</span>
-                    <span class="column5" id="active">Активна</span>
-                    <span class="column6" id="table-summ">15 100 ₽</span>
-                    <span class="column7">16.06.2026 08:55</span>
-                    <span class="column8" id="table-date">Сегодня</span>
-                    <div class="ico-block">
-                        <span class="table-ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                              <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
-                              <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
-                            </svg>
-                        </span>
-                        <span class="table-ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                              <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
-                              <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
-                              <path d="M8.00003 13.1333C8.62596 13.1333 9.13337 12.6259 9.13337 12C9.13337 11.3741 8.62596 10.8667 8.00003 10.8667C7.37411 10.8667 6.8667 11.3741 6.8667 12C6.8667 12.6259 7.37411 13.1333 8.00003 13.1333Z" fill="#334155"/>
+                    <div class="table-navigation-element">
+                        <span class="title-navigation">Менеджер</span>
+                        <span class="table-navigation-block nav-block5">
+                            <span class="table-navigation-content content-block5">Все</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <path d="M4.375 6.25L7.5 9.375L10.625 6.25" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </span>
                     </div>
-                </div>
-                <div id="table-body6">
-                    <span class="column1">1006</span>
-                    <span class="column2" id="table-usrname">Дмитрий Волков</span>
-                    <span class="column3" id="table-mail">d.volkov@example.com</span>
-                    <span class="column4">Интернет + ТВ</span>
-                    <span class="column5" id="active">Активна</span>
-                    <span class="column6" id="table-summ">15 100 ₽</span>
-                    <span class="column7">16.06.2026 08:55</span>
-                    <span class="column8" id="table-date">Сегодня</span>
-                    <div class="ico-block">
-                        <span class="table-ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                              <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
-                              <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
-                            </svg>
-                        </span>
-                        <span class="table-ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                              <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
-                              <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
-                              <path d="M8.00003 13.1333C8.62596 13.1333 9.13337 12.6259 9.13337 12C9.13337 11.3741 8.62596 10.8667 8.00003 10.8667C7.37411 10.8667 6.8667 11.3741 6.8667 12C6.8667 12.6259 7.37411 13.1333 8.00003 13.1333Z" fill="#334155"/>
-                            </svg>
-                        </span>
+                    <div class="table-navigation-element">
+                        <span class="table-navigation-block nav-block6">Сброс</span>
                     </div>
                 </div>
-                <div id="table-body7">
-                    <span class="column1">1007</span>
-                    <span class="column2" id="table-usrname">Сергей Морозов</span>
-                    <span class="column3" id="table-mail">morozov@example.com</span>
-                    <span class="column4">Подключение</span>
-                    <span class="column5" id="in-work">В работе</span>
-                    <span class="column6" id="table-summ">10 300 ₽</span>
-                    <span class="column7">18.06.2026 09:40</span>
-                    <span class="column8" id="table-date">1 день</span>
-                    <div class="ico-block">
-                        <span class="table-ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                              <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
-                              <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
-                            </svg>
-                        </span>
-                        <span class="table-ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                              <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
-                              <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
-                              <path d="M8.00003 13.1333C8.62596 13.1333 9.13337 12.6259 9.13337 12C9.13337 11.3741 8.62596 10.8667 8.00003 10.8667C7.37411 10.8667 6.8667 11.3741 6.8667 12C6.8667 12.6259 7.37411 13.1333 8.00003 13.1333Z" fill="#334155"/>
-                            </svg>
-                        </span>
+                <div class="table-body">
+                    <div class="table-body-head">
+                        <span class="column1 head">№</span>
+                        <span class="column2 head">Клиент</span>
+                        <span class="column3 head">Email</span>
+                        <span class="column4 head">Услуга</span>
+                        <span class="column5 head">Статус</span>
+                        <span class="column6 head">Сумма</span>
+                        <span class="column7 head">Дата создания</span>
+                        <span class="column8 head">SLA</span>
+                        <span class="column9 head">Действия</span>
+                    </div>
+                    <div class="overflow">
+                        <div class="table-row white-row">
+                            <span class="column1">1001</span>
+                            <span class="column2">Иван Петров</span>
+                            <span class="column3">ivan.petrov@example.com</span>
+                            <span class="column4">Интернет</span>
+                            <span class="column5 active">Активна</span>
+                            <span class="column6">12 400 ₽</span>
+                            <span class="column7">12.06.2026 09:15</span>
+                            <span class="column8">Сегодня</span>
+                            <span class="col-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
+                                    <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <span class="col-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
+                                    <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
+                                    <path d="M8.00003 13.1333C8.62596 13.1333 9.13337 12.6259 9.13337 12C9.13337 11.3741 8.62596 10.8667 8.00003 10.8667C7.37411 10.8667 6.8667 11.3741 6.8667 12C6.8667 12.6259 7.37411 13.1333 8.00003 13.1333Z" fill="#334155"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="table-row gray-row">
+                            <span class="column1">1002</span>
+                            <span class="column2">Мария Сидорова</span>
+                            <span class="column3">maria.sid@example.com</span>
+                            <span class="column4">IPTV пакет</span>
+                            <span class="column5 in-work">В работе</span>
+                            <span class="column6">8 900 ₽</span>
+                            <span class="column7">13.06.2026 11:42</span>
+                            <span class="column8">2 дня</span>
+                            <span class="col-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
+                                    <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <span class="col-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
+                                    <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
+                                    <path d="M8.00003 13.1333C8.62596 13.1333 9.13337 12.6259 9.13337 12C9.13337 11.3741 8.62596 10.8667 8.00003 10.8667C7.37411 10.8667 6.8667 11.3741 6.8667 12C6.8667 12.6259 7.37411 13.1333 8.00003 13.1333Z" fill="#334155"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="table-row white-row">
+                            <span class="column1">1003</span>
+                            <span class="column2">Алексей Смирнов</span>
+                            <span class="column3">a.smirnov@example.com</span>
+                            <span class="column4">Поддержка</span>
+                            <span class="column5 waiting">Ожидает</span>
+                            <span class="column6">0 ₽</span>
+                            <span class="column7">14.06.2026 16:05</span>
+                            <span class="column8">4 часа</span>
+                            <span class="col-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
+                                    <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <span class="col-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
+                                    <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
+                                    <path d="M8.00003 13.1333C8.62596 13.1333 9.13337 12.6259 9.13337 12C9.13337 11.3741 8.62596 10.8667 8.00003 10.8667C7.37411 10.8667 6.8667 11.3741 6.8667 12C6.8667 12.6259 7.37411 13.1333 8.00003 13.1333Z" fill="#334155"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="table-row gray-row">
+                            <span class="column1">1004</span>
+                            <span class="column2">Екатерина Кузнецова</span>
+                            <span class="column3">kuz@example.com</span>
+                            <span class="column4">Переезд</span>
+                            <span class="column5 overdue">Просрочена</span>
+                            <span class="column6">3 200 ₽</span>
+                            <span class="column7">15.06.2026 10:20</span>
+                            <span class="column8">-1 день</span>
+                            <span class="col-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
+                                    <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <span class="col-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
+                                    <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
+                                    <path d="M8.00003 13.1333C8.62596 13.1333 9.13337 12.6259 9.13337 12C9.13337 11.3741 8.62596 10.8667 8.00003 10.8667C7.37411 10.8667 6.8667 11.3741 6.8667 12C6.8667 12.6259 7.37411 13.1333 8.00003 13.1333Z" fill="#334155"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="table-row white-row">
+                            <span class="column1">1005</span>
+                            <span class="column2">Дмитрий Волков</span>
+                            <span class="column3">d.volkov@example.com</span>
+                            <span class="column4">Интернет + ТВ</span>
+                            <span class="column5 active">Активна</span>
+                            <span class="column6">15 100 ₽</span>
+                            <span class="column7">16.06.2026 08:55</span>
+                            <span class="column8">Сегодня</span>
+                            <span class="col-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
+                                    <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <span class="col-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
+                                    <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
+                                    <path d="M8.00003 13.1333C8.62596 13.1333 9.13337 12.6259 9.13337 12C9.13337 11.3741 8.62596 10.8667 8.00003 10.8667C7.37411 10.8667 6.8667 11.3741 6.8667 12C6.8667 12.6259 7.37411 13.1333 8.00003 13.1333Z" fill="#334155"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="table-row gray-row">
+                            <span class="column1">1006</span>
+                            <span class="column2">Ольга Николаева</span>
+                            <span class="column3">olga.n@example.com</span>
+                            <span class="column4">Роутер</span>
+                            <span class="column5 closed">Закрыта</span>
+                            <span class="column6">5 600 ₽</span>
+                            <span class="column7">17.06.2026 14:33</span>
+                            <span class="column8">—</span>
+                            <span class="col-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
+                                    <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <span class="col-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
+                                    <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
+                                    <path d="M8.00003 13.1333C8.62596 13.1333 9.13337 12.6259 9.13337 12C9.13337 11.3741 8.62596 10.8667 8.00003 10.8667C7.37411 10.8667 6.8667 11.3741 6.8667 12C6.8667 12.6259 7.37411 13.1333 8.00003 13.1333Z" fill="#334155"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="table-row white-row">
+                            <span class="column1">1007</span>
+                            <span class="column2">Сергей Морозов</span>
+                            <span class="column3">morozov@example.com</span>
+                            <span class="column4">Подключение</span>
+                            <span class="column5 in-work">В работе</span>
+                            <span class="column6">10 300 ₽</span>
+                            <span class="column7">18.06.2026 09:40</span>
+                            <span class="column8">1 день</span>
+                            <span class="col-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
+                                    <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <span class="col-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
+                                    <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
+                                    <path d="M8.00003 13.1333C8.62596 13.1333 9.13337 12.6259 9.13337 12C9.13337 11.3741 8.62596 10.8667 8.00003 10.8667C7.37411 10.8667 6.8667 11.3741 6.8667 12C6.8667 12.6259 7.37411 13.1333 8.00003 13.1333Z" fill="#334155"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="table-row gray-row">
+                            <span class="column1">1008</span>
+                            <span class="column2">Анна Васильева</span>
+                            <span class="column3">anna.v@example.com</span>
+                            <span class="column4">Техник</span>
+                            <span class="column5 waiting">Ожидает</span>
+                            <span class="column6">1 900 ₽</span>
+                            <span class="column7">19.06.2026 12:22</span>
+                            <span class="column8">3 часа</span>
+                            <span class="col-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
+                                    <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <span class="col-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
+                                    <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
+                                    <path d="M8.00003 13.1333C8.62596 13.1333 9.13337 12.6259 9.13337 12C9.13337 11.3741 8.62596 10.8667 8.00003 10.8667C7.37411 10.8667 6.8667 11.3741 6.8667 12C6.8667 12.6259 7.37411 13.1333 8.00003 13.1333Z" fill="#334155"/>
+                                </svg>
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div id="table-body8">
-                    <span class="column1">1008</span>
-                    <span class="column2" id="table-usrname">Анна Васильева</span>
-                    <span class="column3" id="table-mail">anna.v@example.com</span>
-                    <span class="column4">Техник</span>
-                    <span class="column5" id="waiting">Ожидает</span>
-                    <span class="column6" id="table-summ">1 900 ₽</span>
-                    <span class="column7">19.06.2026 12:22</span>
-                    <span class="column8" id="table-date">3 часа</span>
-                    <div class="ico-block">
-                        <span class="table-ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                              <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
-                              <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
-                            </svg>
-                        </span>
-                        <span class="table-ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                              <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
-                              <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
-                              <path d="M8.00003 13.1333C8.62596 13.1333 9.13337 12.6259 9.13337 12C9.13337 11.3741 8.62596 10.8667 8.00003 10.8667C7.37411 10.8667 6.8667 11.3741 6.8667 12C6.8667 12.6259 7.37411 13.1333 8.00003 13.1333Z" fill="#334155"/>
-                            </svg>
-                        </span>
-                    </div>
-                </div>
-                <div id="table-body9">
-                    <span id="all-list">Всего: 128</span>
-                    <span id="line-on-page">Строк на странице</span>
-                    <div id="block-num">
-                        <span id="numb">10</span>
+                <div class="footer-row">
+                    <span class="table-footer all-list">Всего: 128</span>
+                    <span class="table-footer row-in-page">Строк на странице:</span>
+                    <div class="page-button count-row-in-page">
+                        <span class="number">10</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                             <path d="M4.08331 5.83331L6.99998 8.74998L9.91665 5.83331" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <div id="blocks1" class="hover-block">‹‹</div>
-                    <div id="blocks2" class="hover-block">‹</div>
-                    <div id="blocks3" class="hover-block">1</div>
-                    <div id="blocks4" class="hover-block">2</div>
-                    <div id="blocks5" class="hover-block">3</div>
-                    <div id="blocks6" class="hover-block">4</div>
-                    <div id="blocks7" class="hover-block">5</div>
-                    <div id="blocks8" class="hover-block">...</div>
-                    <div id="blocks9" class="hover-block">13</div>
-                    <div id="blocks10" class="hover-block">›</div>
-                    <div id="blocks11" class="hover-block">››</div>
+                    <div class="page-button num-list">‹‹</div>
+                    <div class="page-button num-list">‹</div>
+                    <div class="page-button num-list">1</div>
+                    <div class="page-button num-list">2</div>
+                    <div class="page-button num-list">3</div>
+                    <div class="page-button num-list">4</div>
+                    <div class="page-button num-list">5</div>
+                    <div class="page-button num-list">...</div>
+                    <div class="page-button num-list">13</div>
+                    <div class="page-button num-list">›</div>
+                    <div class="page-button num-list">››</div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
 </body>
 </html>
