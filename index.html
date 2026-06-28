@@ -176,63 +176,59 @@
                     </span>
                 </div>
                 <div class="table-navigation">
-                    <!-- <div class="table-navigation-element">
-                        <span class="title-navigation">Поиск</span>
-                        <span class="table-navigation-block nav-block1">
-                            <span class="table-navigation-content content-block1">Имя, email, номер</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M7.33334 11.3333C9.54248 11.3333 11.3333 9.54248 11.3333 7.33334C11.3333 5.1242 9.54248 3.33334 7.33334 3.33334C5.1242 3.33334 3.33334 5.1242 3.33334 7.33334C3.33334 9.54248 5.1242 11.3333 7.33334 11.3333Z" stroke="#64748B" stroke-width="2"/>
-                                <path d="M10.6667 10.6667L14 14" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </span>
-                    </div> -->
-                    <form>
+                    <form class="form">
                         <div class="table-navigation-element">
                             <label for="search" class="title-navigation">Поиск</label>
-                            <input type="text" id="search" class="table-navigation-block nav-block1" value="Имя, email, номер">
+                            <input type="text" id="search" class="table-navigation-block nav-block1 hover-style" value="Имя, email, номер">
                             <svg class="nav-ico1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <path d="M7.33334 11.3333C9.54248 11.3333 11.3333 9.54248 11.3333 7.33334C11.3333 5.1242 9.54248 3.33334 7.33334 3.33334C5.1242 3.33334 3.33334 5.1242 3.33334 7.33334C3.33334 9.54248 5.1242 11.3333 7.33334 11.3333Z" stroke="#64748B" stroke-width="2"/>
                                 <path d="M10.6667 10.6667L14 14" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
                             </svg>
                         </div>
-                    </form>
-                    <div class="table-navigation-element">
-                        <span class="title-navigation">Статус</span>
-                        <span class="table-navigation-block nav-block2">
-                            <span class="table-navigation-content content-block2">Все</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                <path d="M4.375 6.25L7.5 9.375L10.625 6.25" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </div>
-                    <div class="table-navigation-element">
-                        <span class="title-navigation">Тип услуги</span>
-                        <span class="table-navigation-block nav-block3">
-                            <span class="table-navigation-content content-block3">Все услуги</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                <path d="M4.375 6.25L7.5 9.375L10.625 6.25" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </div>
-                    <form>
+                        <div class="table-navigation-element">
+                            <label for="status" class="title-navigation">Статус</label>
+                            <select class="table-navigation-block nav-block2 hover-style">
+                                <option value="Все">Все</option>
+                                <option value="Активно">Активно</option>
+                                <option value="В работе">В работе</option>
+                                <option value="Просрочена">Просрочена</option>
+                                <option value="Ожидает">Ожидает</option>
+                                <option value="Закрыта">Закрыта</option>
+                            </select>
+                        </div>
+                        <div class="table-navigation-element">
+                            <label for="type-service" class="title-navigation">Тип услуги</label>
+                            <select class="table-navigation-block nav-block3 hover-style">
+                                <option value="Все">Все</option>
+                                <option value="Интернет">Интернет</option>
+                                <option value="ТВ">ТВ</option>
+                                <option value="Роутер">Роутер</option>
+                                <option value="Техник">Техник</option>
+                                <option value="IPTV пакет">IPTV пакет</option>
+                                <option value="Переезд">Переезд</option>
+                            </select>
+                        </div>
                         <div class="table-navigation-element">
                             <label for="period" class="title-navigation">Период</label>
-                            <input type="datetime" id="period" class="table-navigation-block nav-block4" value="01.06.2026 - 19.06.2026">
+                            <input type="datetime" id="period" class="table-navigation-block nav-block4 hover-style" value="01.06.2026 - 19.06.2026">
                             <svg class="nav-ico4" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                 <path d="M12.75 4.5H5.25C4.42157 4.5 3.75 5.17157 3.75 6V13.5C3.75 14.3284 4.42157 15 5.25 15H12.75C13.5784 15 14.25 14.3284 14.25 13.5V6C14.25 5.17157 13.5784 4.5 12.75 4.5Z" stroke="#64748B" stroke-width="1.8"/>
                                 <path d="M6 3V6M12 3V6M3.75 7.5H14.25" stroke="#64748B" stroke-width="1.8" stroke-linecap="round"/>
                             </svg>
                         </div>
+                        <div class="table-navigation-element">
+                            <label for="manager" class="title-navigation">Менеджер</label>
+                            <select class="table-navigation-block nav-block5 hover-style">
+                                <option value="Все">Все</option>
+                                <option value="Хз">Хз</option>
+                                <option value="Хз">Хз</option>
+                                <option value="Хз">Хз</option>
+                                <option value="Хз">Хз</option>
+                                <option value="Хз">Хз</option>
+                                <option value="Хз">Хз</option>
+                            </select>
+                        </div>
                     </form>
-                    <div class="table-navigation-element">
-                        <span class="title-navigation">Менеджер</span>
-                        <span class="table-navigation-block nav-block5">
-                            <span class="table-navigation-content content-block5">Все</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                <path d="M4.375 6.25L7.5 9.375L10.625 6.25" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </div>
                     <div class="table-navigation-element">
                         <span class="table-navigation-block nav-block6">Сброс</span>
                     </div>

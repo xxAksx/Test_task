@@ -129,6 +129,7 @@ nav {
     background: #172033;
     padding-left: 18px;
     gap: 18px;
+    transition: transform 0.3s ;
 }
 .menu-indicator {
     position: relative;
@@ -147,6 +148,7 @@ nav {
     line-height: 16px; /* 145.455% */
 }
 .sidebar-item:hover {
+    transform: scale(1.1);
     background: #2563EB;
     color: #FFF;
     cursor: pointer;
@@ -313,6 +315,7 @@ main {
     font-style: normal;
     font-weight: 600;
     line-height: 19px; /* 146.154% */
+    transition: transform 0.4s;
 }
 .create {
     position: absolute;
@@ -333,20 +336,27 @@ main {
     font-style: normal;
     font-weight: 600;
     line-height: 19px; /* 146.154% */
+    transition: transform 0.4s;
 }
 .export:hover {
+    transform: scale(1.1);
     background: #2563EB;
     color: #FFF;
     cursor: pointer;
 }
 .create:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
 .table-navigation {
     display: flex;
     gap: 12px;
     margin-left: 24px;
     margin-top: 21px;
+}
+.form {
+    display: flex;
+    gap: 12px;
 }
 .table-navigation-element {
     display: flex;
@@ -373,6 +383,19 @@ main {
     font-weight: 400;
     line-height: 19px; /* 146.154% */
 }
+.table-navigation-block1 {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #DBE3EF;
+    background: #FFF;
+    color: #334155;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px; /* 146.154% */
+    width: 146px;;
+}
 .table-navigation-block:hover {
     cursor: pointer;
 }
@@ -382,20 +405,22 @@ main {
 .nav-block1 {
     padding-left: 12px;
     width: 198px;
-    height: 38px;
+    height: 39px;
 }
 .nav-block2 {
+    padding-left: 12px;
     width: 146px;
-    height: 40px;
+    height: 43px;
 }
 .nav-block3 {
+    padding-left: 12px;
     width: 156px;
-    height: 40px;
+    height: 43px;
 }
 .nav-block4 {
     padding-left: 12px;
     width: 228px;
-    height: 40px;
+    height: 39px;
 }
 .nav-block5 {
     width: 146px;
@@ -425,6 +450,12 @@ main {
 .nav-block6:hover {
     background: #2563EB;
     color: #FFF;
+}
+.hover-style:hover {
+    background: #d8e0d9;
+}
+.hover-style:focus {
+    background: #d8e0d9;
 }
 .content-block1 {
     width: 164px;
