@@ -679,24 +679,32 @@ main {
 .footer-row {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 44px;
     margin-left: 24px;
     border-top: 1px solid #E8EDF5;
     position: relative;
 }
-.table-footer {
+.select-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     color: #64748B;
     font-size: 13px;
     font-style: normal;
     font-weight: 500;
     line-height: 19px; /* 146.154% */
 }
-.all-list {
-    width: 85px;
-    margin-right: 31px;
+.table-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .row-in-page {
     width: 132px;
+}
+.page-button-block {
+    display: flex;
 }
 .page-button {
     display: flex;
@@ -710,14 +718,22 @@ main {
     font-style: normal;
     font-weight: 500;
     line-height: 17px; /* 141.667% */
-}
-.page-button {
     cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #DBE3EF;
+    
 }
-.count-row-in-page {
+.count-page {
     width: 60px;
     height: 32px;
-    margin-right: 354px;
+    color: #334155;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px; /* 141.667% */
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #DBE3EF;
 }
 .number {
     width: 24px;
