@@ -1,3 +1,4 @@
+
 body {
     display: grid;
     margin: 0px;
@@ -176,7 +177,6 @@ main {
     flex-direction: column;
     padding-left: 272px;
     padding-top: 72px;
-    width: 1219px;
     height: 100%;
     background: #F5F7FB;
 }
@@ -477,12 +477,14 @@ main {
     margin-left: 24px;
 }
 .overflow {
+    display: block;
     overflow: auto;
     height: 300px;
 }
 .table-body-head {
     display: flex;
     align-items: center;
+    padding-left: 12px;
     margin-top: 5px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -631,11 +633,36 @@ main {
     background: #FEE2E2;
 }
 .head {
+    text-align: start;
     color: #475569;
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
     line-height: 17px; /* 141.667% */
+}
+.hbl1 {
+    padding-right: 16px;
+}
+.hbl2 {
+    padding-right: 28px;
+}
+.hbl3 {
+    padding-right: 34px;
+}
+.hbl4 {
+    padding-right: 20px;
+}
+.hbl5 {
+    padding-right: 22px;
+}
+.hbl6 {
+    padding-right: 24px;
+}
+.hbl7 {
+    padding-right: 24px;
+}
+.hbl8 {
+    padding-right: 18px;
 }
 .table-row {
     display: flex;
