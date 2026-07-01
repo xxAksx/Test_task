@@ -434,11 +434,23 @@ main {
     padding-left: 12px;
     width: 146px;
     height: 43px;
+    appearance: none;
+    padding-right: 1.2em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0.25em) 0.35em;
+    background-size: 0.85em auto;
+    background-image: url(https://avatars.mds.yandex.net/i?id=bc1ded165eb49d32de08efeb8d2454bedeaf3950-4936286-images-thumbs&n=13);
 }
 .nav-block3 {
     padding-left: 12px;
     width: 156px;
     height: 43px;
+    appearance: none;
+    padding-right: 1.2em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0.25em) 0.35em;
+    background-size: 0.85em auto;
+    background-image: url(https://avatars.mds.yandex.net/i?id=bc1ded165eb49d32de08efeb8d2454bedeaf3950-4936286-images-thumbs&n=13);
 }
 .nav-block4 {
     padding-left: 12px;
@@ -448,6 +460,12 @@ main {
 .nav-block5 {
     width: 146px;
     height: 40px;
+    appearance: none;
+    padding-right: 1.2em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0.25em) 0.35em;
+    background-size: 0.85em auto;
+    background-image: url(https://avatars.mds.yandex.net/i?id=bc1ded165eb49d32de08efeb8d2454bedeaf3950-4936286-images-thumbs&n=13);
 }
 .nav-block6 {
     display: flex;
@@ -758,6 +776,12 @@ main {
     cursor: pointer;
     border-radius: 8px;
     border: 1px solid #DBE3EF;
+    appearance: none;
+    padding-right: 1.2em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0.25em) 0.35em;
+    background-size: 0.85em auto;
+    background-image: url(https://avatars.mds.yandex.net/i?id=bc1ded165eb49d32de08efeb8d2454bedeaf3950-4936286-images-thumbs&n=13);
 }
 .number {
     width: 24px;
