@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Inter"),
+       url("/fonts/inter.woff2") format("woff2"),
+       url("/fonts/inter.woff") format("woff");
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 html, body {
   height: 100%;
   width: 100%;
@@ -34,20 +48,21 @@ header {
     font-weight: 600;
     line-height: 29px; /* 145% */
 }
-.icons {
+.icon-block {
     display: flex;
     align-items: center;
-    gap: 22px;
-    margin-left: 328px;
-
+    position: relative;
+    gap: 15px;
 }
-.icons-hover:hover {
+.icon-button {
+    border: none;
+    background: none;
     cursor: pointer;
 }
 .bell {
     position: absolute;
-    top: 12px;
-    left: 384px;
+    top: -6px;
+    left: 66px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +83,7 @@ header {
     background-color: #EEF2FF;
     width: 40px;
     height: 40px;
-    margin-left: 29px;
+    margin-left: 22px;
     border-radius: 50%;
     color: #475569;
     font-size: 13px;
@@ -128,6 +143,7 @@ nav {
     padding-top: 32px;
 }
 .sidebar-item {
+    position: relative;
     display: flex;
     align-items: center;
     width: 224px;
@@ -146,8 +162,8 @@ nav {
     transition: transform 0.3s ;
 }
 .menu-indicator {
-    position: relative;
-    left: 62px;
+    position: absolute;
+    left: 162px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,8 +186,9 @@ nav {
 .collapse {
     display: flex;
     align-items: center;
-    position: relative;
-    top: 27%;
+    position: absolute;
+    /* top: 27%; */
+    bottom: 1%;
     width: 224px;
     height: 44px;
     border-radius: 10px;
@@ -191,26 +208,29 @@ nav {
 .content {
     display: flex;
     flex-direction: column;
+    height: 100%;
     flex: 1;
 }
 main {
     display: flex;
     flex-direction: column;
-    /* padding-left: 272px;
-    padding-top: 72px; */
-    height: 100%;
+    height: calc(100% - 72px);
     background: #F5F7FB;
+    padding-left: 24px;
+    padding-bottom: 24px;
 }
 .widget-container {
     display: flex;
-    padding-left: 24px;
-    padding-top: 16px;
-    gap: 24px;
+    justify-content: space-between;
+    padding: 16px 24px 0px 0px;
+    height: 172px;
 }
 .widget {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 10px;
+    padding: 18px;
     width: 260px;
     height: 124px;
     border-radius: 14px;
@@ -219,9 +239,6 @@ main {
     box-shadow: 0 10px 28px 0 rgba(15, 23, 42, 0.05);
 }
 .widget-title {
-    position: relative;
-    left: 20px;
-    top: 18px;
     width: 150px;
     color: #64748B;
     font-size: 13px;
@@ -230,9 +247,6 @@ main {
     line-height: 19px; /* 146.154% */
 }
 .widget-count {
-    position: relative;
-    left: 20px;
-    top: 30px;
     color: #0F172A;
     font-size: 30px;
     font-style: normal;
@@ -243,9 +257,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    left: 20px;
-    top: 38px;
     width: 150px;
     height: 22px;
     border-radius: 11px;
@@ -275,18 +286,15 @@ main {
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin-top: 32px;
-    margin-left: 196px;
+    margin-top: 12px;
+    margin-left: 186px;
     width: 38px;
     height: 38px;
     border-radius: 10px;
 }
 .main-table {
-    margin-top: 28px;
-    margin-left: 24px;
-    margin-bottom: 24px;
     width: 1112px;
-    height: 579px;
+    height: calc(100% - 172px);
     border-radius: 14px;
     border: 1px solid #E8EDF5;
     background: #FFF;
@@ -294,12 +302,14 @@ main {
 }
 .table-head {
     display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-right: 22px;
 
 }
 .table-title-container {
     display: flex;
     flex-direction: column;
-    margin-top: 28px;
     margin-left: 24px;
     
 }
@@ -318,14 +328,15 @@ main {
     line-height: 17px; /* 141.667% */
 
 }
+.export-create-block {
+    display: flex;
+    gap: 10px;
+}
 .export {
-    position: absolute;
-    margin-top: 24px;
-    margin-left: 856px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     width: 108px;
     height: 40px;
     border-radius: 8px;
@@ -339,14 +350,10 @@ main {
     transition: transform 0.4s;
 }
 .create {
-    position: absolute;
     display: flex;
     gap: 10px;
-    margin-top: 24px;
-    margin-left: 976px;
     justify-content: center;
     align-items: center;
-    position: absolute;
     width: 108px;
     height: 40px;
     border-radius: 8px;
@@ -437,18 +444,18 @@ main {
     appearance: none;
     padding-right: 1.2em;
     background-repeat: no-repeat;
-    background-position: calc(100% - 0.25em) 0.35em;
+    background-position: calc(100% - 0.45em) 0.95em;
     background-size: 0.85em auto;
     background-image: url(https://avatars.mds.yandex.net/i?id=bc1ded165eb49d32de08efeb8d2454bedeaf3950-4936286-images-thumbs&n=13);
 }
 .nav-block3 {
     padding-left: 12px;
-    width: 156px;
+    width: 146px;
     height: 43px;
     appearance: none;
     padding-right: 1.2em;
     background-repeat: no-repeat;
-    background-position: calc(100% - 0.25em) 0.35em;
+    background-position: calc(100% - 0.45em) 0.95em;
     background-size: 0.85em auto;
     background-image: url(https://avatars.mds.yandex.net/i?id=bc1ded165eb49d32de08efeb8d2454bedeaf3950-4936286-images-thumbs&n=13);
 }
@@ -463,7 +470,7 @@ main {
     appearance: none;
     padding-right: 1.2em;
     background-repeat: no-repeat;
-    background-position: calc(100% - 0.25em) 0.35em;
+    background-position: calc(100% - 0.45em) 0.95em;
     background-size: 0.85em auto;
     background-image: url(https://avatars.mds.yandex.net/i?id=bc1ded165eb49d32de08efeb8d2454bedeaf3950-4936286-images-thumbs&n=13);
 }
@@ -513,20 +520,21 @@ main {
 .content-block5 {
     width: 100px;
 }
+.table-wrapper {
+    max-height: calc(100% - 100px - 80px);
+}
 .table-body {
     width: 1064px;
     margin-left: 24px;
 }
 .overflow {
     display: block;
-    overflow: auto;
+    overflow-y: auto;
     height: 300px;
 }
 .table-body-head {
     display: flex;
     align-items: center;
-    padding-left: 12px;
-    margin-top: 5px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background: #F8FAFC;
@@ -534,9 +542,7 @@ main {
     height: 44px;
 }
 .column1 {
-    margin-left: 12px;
-    margin-right: 16px;
-    width: 30px;
+    padding-left: 12px;
     color: #334155;
     font-size: 12px;
     font-style: normal;
@@ -545,7 +551,7 @@ main {
 }
 .column2 {
     width: 166px;
-    margin-right: 24px;
+    padding-left: 12px;
     color: #0F172A;
     font-size: 13px;
     font-style: normal;
@@ -554,7 +560,7 @@ main {
 }
 .column3 {
     width: 164px;
-    margin-right: 24px;
+    padding-right: 24px;
     color: #475569;
     font-size: 12px;
     font-style: normal;
@@ -563,7 +569,7 @@ main {
 }
 .column4 {
     width: 96px;
-    margin-right: 20px;
+    padding-right: 20px;
     color: #334155;
     font-size: 12px;
     font-style: normal;
@@ -572,7 +578,7 @@ main {
 }
 .column5 {
     width: 90px;
-    margin-right: 22px;
+    /* padding-right: 22px; */
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
@@ -580,7 +586,7 @@ main {
 }
 .column6 {
     width: 66px;
-    margin-right: 24px;
+    /* padding-right: 24px; */
     color: #334155;
     font-size: 12px;
     font-style: normal;
@@ -589,7 +595,7 @@ main {
 }
 .column7 {
     width: 114px;
-    margin-right: 24px;
+    /* margin-right: 24px; */
     color: #334155;
     font-size: 12px;
     font-style: normal;
@@ -598,7 +604,7 @@ main {
 }
 .column8 {
     width: 58px;
-    margin-right: 18px;
+    /* margin-right: 18px; */
     color: #475569;
     font-size: 12px;
     font-style: normal;
@@ -623,53 +629,31 @@ main {
     background: #2563EB;
     cursor: pointer;
 }
-.active {
+.status {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #15803D;
     width: 94px;
     height: 24px;
     border-radius: 12px;
+}
+.active {
+    color: #15803D;
     background: #DCFCE7;
 }
 .in-work {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 94px;
-    height: 24px;
-    border-radius: 12px;
     color: #2563EB;
     background: #DBEAFE;
 }
 .waiting {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 94px;
-    height: 24px;
-    border-radius: 12px;
     color: #C2410C;
     background: #FFEDD5;
 }
 .closed {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 94px;
-    height: 24px;
-    border-radius: 12px;
     color: #475569;
     background: #E5E7EB;
 }
 .overdue {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 94px;
-    height: 24px;
-    border-radius: 12px;
     color: #DC2626;
     background: #FEE2E2;
 }
@@ -681,33 +665,10 @@ main {
     font-weight: 600;
     line-height: 17px; /* 141.667% */
 }
-.hbl1 {
-    padding-right: 16px;
-}
-.hbl2 {
-    padding-right: 28px;
-}
-.hbl3 {
-    padding-right: 34px;
-}
-.hbl4 {
-    padding-right: 20px;
-}
-.hbl5 {
-    padding-right: 22px;
-}
-.hbl6 {
-    padding-right: 24px;
-}
-.hbl7 {
-    padding-right: 24px;
-}
-.hbl8 {
-    padding-right: 18px;
-}
 .table-row {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     height: 57px;
     border-bottom: 1px solid #E8EDF5;
 }
@@ -779,7 +740,7 @@ main {
     appearance: none;
     padding-right: 1.2em;
     background-repeat: no-repeat;
-    background-position: calc(100% - 0.25em) 0.35em;
+    background-position: calc(100% - 0.35em) 0.85em;
     background-size: 0.85em auto;
     background-image: url(https://avatars.mds.yandex.net/i?id=bc1ded165eb49d32de08efeb8d2454bedeaf3950-4936286-images-thumbs&n=13);
 }
