@@ -216,19 +216,18 @@ main {
     flex-direction: column;
     height: calc(100% - 72px);
     background: #F5F7FB;
-    padding-left: 24px;
-    padding-bottom: 24px;
+    padding: 24px;
 }
 .widget-container {
     display: flex;
     justify-content: space-between;
-    padding: 16px 24px 0px 0px;
     height: 172px;
 }
 .widget {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
     gap: 10px;
     padding: 18px;
     width: 260px;
@@ -286,14 +285,13 @@ main {
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin-top: 12px;
-    margin-left: 186px;
+    top: 30px;
+    left: 195px;
     width: 38px;
     height: 38px;
     border-radius: 10px;
 }
 .main-table {
-    width: 1112px;
     height: calc(100% - 172px);
     border-radius: 14px;
     border: 1px solid #E8EDF5;
@@ -303,15 +301,11 @@ main {
 .table-head {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-right: 22px;
-
+    padding: 24px 22px 0px 24px;
 }
 .table-title-container {
     display: flex;
     flex-direction: column;
-    margin-left: 24px;
-    
 }
 .main-table-title {
     color: #0F172A;
@@ -333,7 +327,6 @@ main {
     gap: 10px;
 }
 .export {
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -379,8 +372,9 @@ main {
 .table-navigation {
     display: flex;
     gap: 12px;
-    margin-left: 24px;
-    margin-top: 21px;
+    padding: 21px 0px 0px 24px;
+    /* margin-left: 24px;
+    margin-top: 21px; */
 }
 .form {
     display: flex;
@@ -505,36 +499,20 @@ main {
 .hover-style:focus {
     background: #e3ebe4;
 }
-.content-block1 {
-    width: 164px;
-}
-.content-block2 {
-    width: 100px;
-}
-.content-block3 {
-    width: 110px;
-}
-.content-block4 {
-    width: 194px;
-}
-.content-block5 {
-    width: 100px;
-}
 .table-wrapper {
-    max-height: calc(100% - 100px - 80px);
+    padding-left: 24px;
+    overflow-y: auto;
+    max-height: calc(100% - 140px - 80px);
 }
 .table-body {
-    width: 1064px;
-    margin-left: 24px;
+    width: 100%;
+    padding-right: 24px;
 }
 .overflow {
-    display: block;
     overflow-y: auto;
     height: 300px;
 }
 .table-body-head {
-    display: flex;
-    align-items: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background: #F8FAFC;
@@ -550,7 +528,6 @@ main {
     line-height: 17px; /* 141.667% */
 }
 .column2 {
-    width: 166px;
     padding-left: 12px;
     color: #0F172A;
     font-size: 13px;
@@ -559,8 +536,6 @@ main {
     line-height: 19px; /* 146.154% */
 }
 .column3 {
-    width: 164px;
-    padding-right: 24px;
     color: #475569;
     font-size: 12px;
     font-style: normal;
@@ -568,8 +543,6 @@ main {
     line-height: 17px; /* 141.667% */
 }
 .column4 {
-    width: 96px;
-    padding-right: 20px;
     color: #334155;
     font-size: 12px;
     font-style: normal;
@@ -577,16 +550,12 @@ main {
     line-height: 17px; /* 141.667% */
 }
 .column5 {
-    width: 90px;
-    /* padding-right: 22px; */
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
     line-height: 17px; /* 141.667% */
 }
 .column6 {
-    width: 66px;
-    /* padding-right: 24px; */
     color: #334155;
     font-size: 12px;
     font-style: normal;
@@ -594,8 +563,6 @@ main {
     line-height: 17px; /* 141.667% */
 }
 .column7 {
-    width: 114px;
-    /* margin-right: 24px; */
     color: #334155;
     font-size: 12px;
     font-style: normal;
@@ -603,8 +570,6 @@ main {
     line-height: 17px; /* 141.667% */
 }
 .column8 {
-    width: 58px;
-    /* margin-right: 18px; */
     color: #475569;
     font-size: 12px;
     font-style: normal;
@@ -612,7 +577,7 @@ main {
     line-height: 17px; /* 141.667% */
 }
 .column9 {
-    width: 88px;
+    display: flex;
 }
 .col-icons {
     display: flex;
@@ -658,6 +623,9 @@ main {
     background: #FEE2E2;
 }
 .head {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
     text-align: start;
     color: #475569;
     font-size: 12px;
@@ -666,9 +634,6 @@ main {
     line-height: 17px; /* 141.667% */
 }
 .table-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     height: 57px;
     border-bottom: 1px solid #E8EDF5;
 }
