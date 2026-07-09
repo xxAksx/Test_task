@@ -3,8 +3,8 @@
   font-style: normal;
   font-weight: 400;
   src: local("Inter"),
-       url("/fonts/inter.woff2") format("woff2"),
-       url("/fonts/inter.woff") format("woff");
+       url("/Inter/Inter-Regular.woff2") format("woff2"),
+       url("/Inter/Inter-Regular.woff") format("woff");
 }
 
 *,
@@ -22,12 +22,9 @@ body {
     font-family: Inter, sans-serif;
 }
 header {
-    /* position: fixed; */
-    /* left: 272px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* width: 100%; */
     height: 72px;
     background: #FFF;
     border: 1px solid #E8EDF5;
@@ -51,10 +48,11 @@ header {
 .icon-block {
     display: flex;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     gap: 15px;
 }
 .icon-button {
+    position: relative;
     border: none;
     background: none;
     cursor: pointer;
@@ -62,7 +60,7 @@ header {
 .bell {
     position: absolute;
     top: -6px;
-    left: 66px;
+    right: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,7 +152,6 @@ nav {
     gap: 18px;
     border: none;
     color: #CBD5E1;
-    font-family: Inter;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -163,7 +160,7 @@ nav {
 }
 .menu-indicator {
     position: absolute;
-    left: 162px;
+    right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -372,9 +369,7 @@ main {
 .table-navigation {
     display: flex;
     gap: 12px;
-    padding: 21px 0px 0px 24px;
-    /* margin-left: 24px;
-    margin-top: 21px; */
+    padding: 21px 0px 18px 24px;
 }
 .form {
     display: flex;
@@ -383,12 +378,13 @@ main {
 .table-navigation-element {
     display: flex;
     flex-direction: column;
+    position: relative;
     gap: 5px;
     background: none;
     border: none;
 }
 .title-navigation {
-    display: flex;
+    /* display: flex; */
     color: #64748B;
     font-size: 12px;
     font-style: normal;
@@ -396,11 +392,9 @@ main {
     line-height: 17px; /* 141.667% */
 }
 .table-navigation-block {
-    display: flex;
-    align-items: center;
+    padding: 0px 12px;
     border-radius: 8px;
     border: 1px solid #DBE3EF;
-    background: #FFF;
     color: #334155;
     font-size: 13px;
     font-style: normal;
@@ -426,47 +420,29 @@ main {
 .table-navigation-content {
     margin-left: 12px;
 }
-.nav-block1 {
+input,
+select {
     padding-left: 12px;
+}
+.nav-block1 {
     width: 198px;
     height: 39px;
 }
 .nav-block2 {
-    padding-left: 12px;
     width: 146px;
     height: 43px;
-    appearance: none;
-    padding-right: 1.2em;
-    background-repeat: no-repeat;
-    background-position: calc(100% - 0.45em) 0.95em;
-    background-size: 0.85em auto;
-    background-image: url(https://avatars.mds.yandex.net/i?id=bc1ded165eb49d32de08efeb8d2454bedeaf3950-4936286-images-thumbs&n=13);
 }
 .nav-block3 {
-    padding-left: 12px;
     width: 146px;
     height: 43px;
-    appearance: none;
-    padding-right: 1.2em;
-    background-repeat: no-repeat;
-    background-position: calc(100% - 0.45em) 0.95em;
-    background-size: 0.85em auto;
-    background-image: url(https://avatars.mds.yandex.net/i?id=bc1ded165eb49d32de08efeb8d2454bedeaf3950-4936286-images-thumbs&n=13);
 }
 .nav-block4 {
-    padding-left: 12px;
     width: 228px;
     height: 39px;
 }
 .nav-block5 {
     width: 146px;
     height: 40px;
-    appearance: none;
-    padding-right: 1.2em;
-    background-repeat: no-repeat;
-    background-position: calc(100% - 0.45em) 0.95em;
-    background-size: 0.85em auto;
-    background-image: url(https://avatars.mds.yandex.net/i?id=bc1ded165eb49d32de08efeb8d2454bedeaf3950-4936286-images-thumbs&n=13);
 }
 .nav-block6 {
     display: flex;
@@ -478,16 +454,19 @@ main {
     color: #334155;
     font-weight: 600;
 }
-.nav-ico1 {
-    position: relative;
-    top: -34px;
-    left: 180px;
-    
+select {
+    appearance: none;
+    padding-right: 1.2em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0.45em) 0.95em;
+    background-size: 0.85em auto;
+    background-image: url(https://avatars.mds.yandex.net/i?id=bc1ded165eb49d32de08efeb8d2454bedeaf3950-4936286-images-thumbs&n=13);
 }
-.nav-ico4 {
-    position: relative;
-    top: -36px;
-    left: 210px;
+.nav-ico1 {
+    position: absolute;
+    top: 32px;
+    right: 10px;
+
 }
 .nav-block6:hover {
     background: #2563EB;
@@ -505,6 +484,7 @@ main {
     max-height: calc(100% - 140px - 80px);
 }
 .table-body {
+    border-collapse: collapse;
     width: 100%;
     padding-right: 24px;
 }
@@ -515,9 +495,7 @@ main {
 .table-body-head {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background: #F8FAFC;
     border-bottom: 1px solid #E8EDF5;
-    height: 44px;
 }
 .column1 {
     padding-left: 12px;
@@ -576,8 +554,9 @@ main {
     font-weight: 600;
     line-height: 17px; /* 141.667% */
 }
-.column9 {
+.cell {
     display: flex;
+    padding: 12px;
 }
 .col-icons {
     display: flex;
@@ -624,6 +603,8 @@ main {
 }
 .head {
     position: sticky;
+    background: #F8FAFC;
+    height: 44px;
     top: 0px;
     z-index: 1;
     text-align: start;
@@ -702,12 +683,12 @@ main {
     cursor: pointer;
     border-radius: 8px;
     border: 1px solid #DBE3EF;
-    appearance: none;
+    /* appearance: none;
     padding-right: 1.2em;
     background-repeat: no-repeat;
     background-position: calc(100% - 0.35em) 0.85em;
     background-size: 0.85em auto;
-    background-image: url(https://avatars.mds.yandex.net/i?id=bc1ded165eb49d32de08efeb8d2454bedeaf3950-4936286-images-thumbs&n=13);
+    background-image: url(https://avatars.mds.yandex.net/i?id=bc1ded165eb49d32de08efeb8d2454bedeaf3950-4936286-images-thumbs&n=13); */
 }
 .number {
     width: 24px;
