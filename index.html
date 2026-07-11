@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>
-    <aside>
-        <div class="sidebar-header">
+    <aside class="sidebar">
+        <div class="sidebar__header">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <g clip-path="url(#clip0_21_6)">
                     <path d="M12 3L21 12L12 21L3 12L12 3Z" stroke="#60A5FA" stroke-width="3"/>
@@ -22,63 +22,63 @@
             </svg>
             <span>Demo Admin</span>
         </div>
-        <nav>
-            <button class="sidebar-item">
+        <nav class="sidebar__nav">
+            <button class="sidebar__item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                     <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
                 </svg>
                 Заявки
-                <span class="menu-indicator">99+</span>
+                <span class="sidebar__item--active">99+</span>
             </button>
-            <button class="sidebar-item">
+            <button class="sidebar__item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                     <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
                 </svg>
                 Клиенты
             </button>
-            <button class="sidebar-item">
+            <button class="sidebar__item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                     <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
                 </svg>
                 Договоры
             </button>
-            <button class="sidebar-item">
+            <button class="sidebar__item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                     <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
                 </svg>
                 Задачи
             </button>
-            <button class="sidebar-item">
+            <button class="sidebar__item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                     <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
                 </svg>
                 Сообщения
             </button>
-            <button class="sidebar-item">
+            <button class="sidebar__item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                     <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
                 </svg>
                 Файлы
             </button>
-            <button class="sidebar-item">
+            <button class="sidebar__item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                     <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
                 </svg>
                 Отчёты
             </button>
-            <button class="sidebar-item">
+            <button class="sidebar__item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                     <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
                 </svg>
                 Настройки
             </button>
-            <button class="sidebar-item">
+            <button class="sidebar__item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                     <circle cx="4" cy="4" r="3.3" stroke="#93A4BD" stroke-width="1.4"/>
                 </svg>
                 Журнал аудита
             </button>
-            <button class="collapse">
+            <button class="sidebar__collapse">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path d="M9.16667 5.83331L5 9.99998L9.16667 14.1666" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M15 5.83331L10.8333 9.99998L15 14.1666" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -88,29 +88,29 @@
         </nav>
     </aside>
     <div class="content">
-        <header>
-            <div class="header-block">
-                <svg class="icons-hover" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <header class="content__header">
+            <div class="header__block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7H19M5 12H19M5 17H19" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
                 </svg>
-                <span class="heading">Реестр заявок</span>
+                <span class="header__block-title">Реестр заявок</span>
             </div>
-            <div class="header-block">
-                <span class="icon-block">
-                    <button class="icon-button">
+            <div class="header__block">
+                <span class="block__icon-block">
+                    <button class="icon-block__button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                             <path d="M10.0834 15.5833C13.1209 15.5833 15.5834 13.1209 15.5834 10.0833C15.5834 7.04577 13.1209 4.58333 10.0834 4.58333C7.04581 4.58333 4.58337 7.04577 4.58337 10.0833C4.58337 13.1209 7.04581 15.5833 10.0834 15.5833Z" stroke="#0F172A" stroke-width="2"/>
                             <path d="M14.6666 14.6667L19.25 19.25" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </button>
-                    <button class="icon-button">
-                        <span class="bell">5</span>
+                    <button class="icon-block__button">
+                        <span class="icon-block__button-bell">5</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
                             <path d="M17.25 9.58333C17.25 6.325 15.0459 3.83333 11.5 3.83333C7.95421 3.83333 5.75004 6.325 5.75004 9.58333V13.4167L3.83337 16.2917H19.1667L17.25 13.4167V9.58333Z" stroke="#0F172A" stroke-width="1.8" stroke-linejoin="round"/>
                             <path d="M9.58337 19.1667H13.4167" stroke="#0F172A" stroke-width="1.8" stroke-linecap="round"/>
                         </svg>
                     </button>
-                    <button class="icon-button">
+                    <button class="icon-block__button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#0F172A" stroke-width="1.8"/>
                             <path d="M10 9.3C10.2 7.9 11.1 7 12.5 7C14 7 15 8 15 9.3C15 10.5 14.2 11.1 13.3 11.8C12.5 12.4 12 13 12 14" stroke="#0F172A" stroke-width="1.8" stroke-linecap="round"/>
@@ -118,68 +118,68 @@
                         </svg>
                     </button>
                 </span>
-                <span class="user-avatar">ИП</span>
-                <span class="user-info">
-                    <span class="user-info-name">Иван Петров</span>
-                    <span class="user-info-role">Администратор</span>
+                <span class="block__avatar">ИП</span>
+                <span class="block__info">
+                    <span class="info__user--name">Иван Петров</span>
+                    <span class="info__user--role">Администратор</span>
                 </span>
-                <svg class="icons-hover" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                     <path d="M5.25 7.5L9 11.25L12.75 7.5" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </div>
         </header>
-        <main>
-            <div class="widget-container">
-                <div class="widget">
-                    <span class="widget-title">Всего заявок</span>
-                    <span class="widget-count">128</span>
-                    <span class="widget-statistic widget-one" >За неделю: +12</span>
-                    <span class="widget-indicator widget-one">
+        <main class="content__main">
+            <div class="main__widget-container">
+                <div class="widget-container__widget">
+                    <span class="widget__title">Всего заявок</span>
+                    <span class="widget__count">128</span>
+                    <span class="widget__statistic widget__statistic--one" >За неделю: +12</span>
+                    <span class="widget__indicator widget__statistic--one">
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
                             <circle cx="5" cy="5" r="5" fill="#2563EB"/>
                         </svg>
                     </span>
                 </div>
-                <div class="widget">
-                    <span class="widget-title">В работе</span>
-                    <span class="widget-count">34</span>
-                    <span class="widget-statistic widget-two">26% от очереди</span>
-                    <span class="widget-indicator widget-two">
+                <div class="widget-container__widget">
+                    <span class="widget__title">В работе</span>
+                    <span class="widget__count">34</span>
+                    <span class="widget__statistic widget__statistic--two">26% от очереди</span>
+                    <span class="widget__indicator widget__statistic--two">
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
                             <circle cx="5" cy="5" r="5" fill="#F97316"/>
                         </svg>
                     </span>
                 </div>
-                <div class="widget">
-                    <span class="widget-title">Просрочено</span>
-                    <span class="widget-count">7</span>
-                    <span class="widget-statistic widget-three">SLA нарушен</span>
-                    <span class="widget-indicator widget-three">
+                <div class="widget-container__widget">
+                    <span class="widget__title">Просрочено</span>
+                    <span class="widget__count">7</span>
+                    <span class="widget__statistic widget__statistic--three">SLA нарушен</span>
+                    <span class="widget__indicator widget__statistic--three">
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
                             <circle cx="5" cy="5" r="5" fill="#EF4444"/>
                         </svg>
                     </span>
                 </div>
-                <div class="widget">
-                    <span class="widget-title">Закрыто</span>
-                    <span class="widget-count">87</span>
-                    <span class="widget-statistic widget-four">68% от общего</span>
-                    <span class="widget-indicator widget-four">
+                <div class="widget-container__widget">
+                    <span class="widget__title">Закрыто</span>
+                    <span class="widget__count">87</span>
+                    <span class="widget__statistic widget__statistic--four">68% от общего</span>
+                    <span class="widget__indicator widget__statistic--four">
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
                             <circle cx="5" cy="5" r="5" fill="#16A34A"/>
                         </svg>
                     </span>
                 </div>
             </div>
-            <div class="main-table">
-                <div class="table-head">
-                    <div class="table-title-container">
-                        <span class="main-table-title">Заявки на подключение</span>
-                        <span class="main-table-subtitle">Контролируйте обращения клиентов, сроки SLA и работу ответственных менеджеров</span>
+            <div class="main__main-body">
+                <div class="main-body__main-body-head">
+                    <div class="main-body-head__title-container">
+                        <span class="title-container__title">Заявки на подключение</span>
+                        <span class="title-container__subtitle">Контролируйте обращения клиентов, сроки SLA и работу ответственных менеджеров</span>
                     </div>
-                    <div class="export-create-block">
-                        <button class="export">Экспорт</button>
-                        <button class="create">
+                    <div class="main-body-head__button-block">
+                        <button class="button-block__export">Экспорт</button>
+                        <button class="button-block__create">
                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
                                 <path d="M6.25 1V11.5M1 6.25H11.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
                             </svg>
@@ -187,19 +187,19 @@
                         </button>
                     </div>
                 </div>
-                <div class="table-navigation">
-                    <form class="form">
-                        <div class="table-navigation-element">
-                            <label for="search" class="title-navigation">Поиск</label>
-                            <input type="text" id="search" class="table-navigation-block nav-block1 hover-style" value="Имя, email, номер">
-                            <svg class="nav-ico1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <div class="main-body__navigation">
+                    <form class="navigation__form">
+                        <div class="form__form-element">
+                            <label for="search" class="form-element__label">Поиск</label>
+                            <input type="text" id="search" class="form-element__form-block form-element__form-block--one" value="Имя, email, номер">
+                            <svg class="form-element__form-ico" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <path d="M7.33334 11.3333C9.54248 11.3333 11.3333 9.54248 11.3333 7.33334C11.3333 5.1242 9.54248 3.33334 7.33334 3.33334C5.1242 3.33334 3.33334 5.1242 3.33334 7.33334C3.33334 9.54248 5.1242 11.3333 7.33334 11.3333Z" stroke="#64748B" stroke-width="2"/>
                                 <path d="M10.6667 10.6667L14 14" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
                             </svg>
                         </div>
-                        <div class="table-navigation-element">
-                            <label for="status" class="title-navigation">Статус</label>
-                            <select class="table-navigation-block nav-block2">
+                        <div class="form__form-element">
+                            <label for="status" class="form-element__label">Статус</label>
+                            <select class="form-element__form-block form-element__form-block--two">
                                 <option value="Все">Все</option>
                                 <option value="Активно">Активно</option>
                                 <option value="В работе">В работе</option>
@@ -208,9 +208,9 @@
                                 <option value="Закрыта">Закрыта</option>
                             </select>
                         </div>
-                        <div class="table-navigation-element">
-                            <label for="type-service" class="title-navigation">Тип услуги</label>
-                            <select class="table-navigation-block nav-block3">
+                        <div class="form__form-element">
+                            <label for="type-service" class="form-element__label">Тип услуги</label>
+                            <select class="form-element__form-block form-element__form-block--three">
                                 <option value="Все">Все</option>
                                 <option value="Интернет">Интернет</option>
                                 <option value="ТВ">ТВ</option>
@@ -220,13 +220,13 @@
                                 <option value="Переезд">Переезд</option>
                             </select>
                         </div>
-                        <div class="table-navigation-element">
-                            <label for="period" class="title-navigation">Период</label>
-                            <input type="date" id="period" class="table-navigation-block nav-block4 hover-style" value="01.06.2026 - 19.06.2026">
+                        <div class="form__form-element">
+                            <label for="period" class="form-element__label">Период</label>
+                            <input type="date" id="period" class="form-element__form-block form-element__form-block--four" value="01.06.2026 - 19.06.2026">
                         </div>
-                        <div class="table-navigation-element">
-                            <label for="manager" class="title-navigation">Менеджер</label>
-                            <select class="table-navigation-block nav-block5">
+                        <div class="form__form-element">
+                            <label for="manager" class="form-element__label">Менеджер</label>
+                            <select class="form-element__form-block form-element__form-block--five">
                                 <option value="Все">Все</option>
                                 <option value="Хз">Хз</option>
                                 <option value="Хз">Хз</option>
@@ -237,42 +237,42 @@
                             </select>
                         </div>
                     </form>
-                    <button class="table-navigation-element">
-                        <span class="table-navigation-block nav-block6">Сброс</span>
+                    <button class="form__form-element">
+                        <span class="form-element__form-block form-element__form-block--six">Сброс</span>
                     </button>
                 </div>
-                <div class="table-wrapper">
-                    <table class="table-body">
-                        <thead class="table-body-head">
-                            <th class="column1 head">№</th>
-                            <th class="column2 head">Клиент</th>
-                            <th class="column3 head">Email</th>
-                            <th class="column4 head">Услуга</th>
-                            <th class="column5 head">Статус</th>
-                            <th class="column6 head">Сумма</th>
-                            <th class="column7 head">Дата создания</th>
-                            <th class="column8 head">SLA</th>
-                            <th class="column9 head">Действия</th>
+                <div class="main-body__table-wrapper">
+                    <table class="table-wrapper__table">
+                        <thead class="table__table-head">
+                            <th class="table__column1 table-head__head-row">№</th>
+                            <th class="table__column2 table-head__head-row">Клиент</th>
+                            <th class="table__column3 table-head__head-row">Email</th>
+                            <th class="table__column4 table-head__head-row">Услуга</th>
+                            <th class="table__column5 table-head__head-row">Статус</th>
+                            <th class="table__column6 table-head__head-row">Сумма</th>
+                            <th class="table__column7 table-head__head-row">Дата создания</th>
+                            <th class="table__column8 table-head__head-row">SLA</th>
+                            <th class="table-head__head-row">Действия</th>
                         </thead>
-                        <tbody class="overflow">
-                            <tr class="table-row white-row">
-                                <td class="column1">1001</td>
-                                <td class="column2">Иван Петров</td>
-                                <td class="column3">ivan.petrov@example.com</td>
-                                <td class="column4">Интернет</td>
-                                <td class="column5"><div class="active status">Активна</div></td>
-                                <td class="column6">12 400 ₽</td>
-                                <td class="column7">12.06.2026 09:15</td>
-                                <td class="column8">Сегодня</td>
-                                <td class="column9">
-                                    <div class="cell">
-                                        <button class="col-icons">
+                        <tbody class="table__table-body">
+                            <tr class="table-body__table-row table-row__white-row">
+                                <td class="table__column1">1001</td>
+                                <td class="table__column2">Иван Петров</td>
+                                <td class="table__column3">ivan.petrov@example.com</td>
+                                <td class="table__column4">Интернет</td>
+                                <td class="table__column5"><div class="status status--active">Активна</div></td>
+                                <td class="table__column6">12 400 ₽</td>
+                                <td class="table__column7">12.06.2026 09:15</td>
+                                <td class="table__column8">Сегодня</td>
+                                <td>
+                                    <div class="table__column-cell">
+                                        <button class="column-cell__col-icons">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
                                                 <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
                                             </svg>
                                         </button>
-                                        <button class="col-icons">
+                                        <button class="column-cell__col-icons">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
                                                 <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
@@ -282,24 +282,24 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr class="table-row gray-row">
-                                <td class="column1">1002</td>
-                                <td class="column2">Мария Сидорова</td>
-                                <td class="column3">maria.sid@example.com</td>
-                                <td class="column4">IPTV пакет</td>
-                                <td class="column5"><div class="in-work status">В работе</div></td>
-                                <td class="column6">8 900 ₽</td>
-                                <td class="column7">13.06.2026 11:42</td>
-                                <td class="column8">2 дня</td>
-                                <td class="column9">
-                                    <div class="cell">
-                                        <button class="col-icons">
+                            <tr class="table-body__table-row table-row__gray-row">
+                                <td class="table__column1">1002</td>
+                                <td class="table__column2">Мария Сидорова</td>
+                                <td class="table__column3">maria.sid@example.com</td>
+                                <td class="table__column4">IPTV пакет</td>
+                                <td class="table__column5"><div class="status status--in--progress">В работе</div></td>
+                                <td class="table__column6">8 900 ₽</td>
+                                <td class="table__column7">13.06.2026 11:42</td>
+                                <td class="table__column8">2 дня</td>
+                                <td>
+                                    <div class="table__column-cell">
+                                        <button class="column-cell__col-icons">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
                                                 <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
                                             </svg>
                                         </button>
-                                        <button class="col-icons">
+                                        <button class="column-cell__col-icons">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
                                                 <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
@@ -309,24 +309,24 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr class="table-row white-row">
-                                <td class="column1">1003</td>
-                                <td class="column2">Алексей Смирнов</td>
-                                <td class="column3">a.smirnov@example.com</td>
-                                <td class="column4">Поддержка</td>
-                                <td class="column5"><div class="waiting status">Ожидает</div></td>
-                                <td class="column6">0 ₽</td>
-                                <td class="column7">14.06.2026 16:05</td>
-                                <td class="column8">4 часа</td>
-                                <td class="column9">
-                                    <div class="cell">
-                                        <button class="col-icons">
+                            <tr class="table-body__table-row table-row__white-row">
+                                <td class="table__column1">1003</td>
+                                <td class="table__column2">Алексей Смирнов</td>
+                                <td class="table__column3">a.smirnov@example.com</td>
+                                <td class="table__column4">Поддержка</td>
+                                <td class="table__column5"><div class="status status--waiting">Ожидает</div></td>
+                                <td class="table__column6">0 ₽</td>
+                                <td class="table__column7">14.06.2026 16:05</td>
+                                <td class="table__column8">4 часа</td>
+                                <td>
+                                    <div class="table__column-cell">
+                                        <button class="column-cell__col-icons">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
                                                 <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
                                             </svg>
                                         </button>
-                                        <button class="col-icons">
+                                        <button class="column-cell__col-icons">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
                                                 <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
@@ -336,24 +336,24 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr class="table-row gray-row">
-                                <td class="column1">1004</td>
-                                <td class="column2">Екатерина Кузнецова</td>
-                                <td class="column3">kuz@example.com</td>
-                                <td class="column4">Переезд</td>
-                                <td class="column5"><div class="overdue status">Просрочена</div></td>
-                                <td class="column6">3 200 ₽</td>
-                                <td class="column7">15.06.2026 10:20</td>
-                                <td class="column8">-1 день</td>
-                                <td class="column9">
-                                    <div class="cell">
-                                        <button class="col-icons">
+                            <tr class="table-body__table-row table-row__gray-row">
+                                <td class="table__column1">1004</td>
+                                <td class="table__column2">Екатерина Кузнецова</td>
+                                <td class="table__column3">kuz@example.com</td>
+                                <td class="table__column4">Переезд</td>
+                                <td class="table__column5"><div class="status status--overdue">Просрочена</div></td>
+                                <td class="table__column6">3 200 ₽</td>
+                                <td class="table__column7">15.06.2026 10:20</td>
+                                <td class="table__column8">-1 день</td>
+                                <td>
+                                    <div class="table__column-cell">
+                                        <button class="column-cell__col-icons">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
                                                 <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
                                             </svg>
                                         </button>
-                                        <button class="col-icons">
+                                        <button class="column-cell__col-icons">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
                                                 <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
@@ -363,24 +363,24 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr class="table-row white-row">
-                                <td class="column1">1005</td>
-                                <td class="column2">Дмитрий Волков</td>
-                                <td class="column3">d.volkov@example.com</td>
-                                <td class="column4">Интернет + ТВ</td>
-                                <td class="column5"><div class="active status">Активна</div></td>
-                                <td class="column6">15 100 ₽</td>
-                                <td class="column7">16.06.2026 08:55</td>
-                                <td class="column8">Сегодня</td>
-                                <td class="column9">
-                                    <div class="cell">
-                                        <button class="col-icons">
+                            <tr class="table-body__table-row table-row__white-row">
+                                <td class="table__column1">1005</td>
+                                <td class="table__column2">Дмитрий Волков</td>
+                                <td class="table__column3">d.volkov@example.com</td>
+                                <td class="table__column4">Интернет + ТВ</td>
+                                <td class="table__column5"><div class="status status--active">Активна</div></td>
+                                <td class="table__column6">15 100 ₽</td>
+                                <td class="table__column7">16.06.2026 08:55</td>
+                                <td class="table__column8">Сегодня</td>
+                                <td>
+                                    <div class="table__column-cell">
+                                        <button class="column-cell__col-icons">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
                                                 <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
                                             </svg>
                                         </button>
-                                        <button class="col-icons">
+                                        <button class="column-cell__col-icons">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
                                                 <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
@@ -390,24 +390,24 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr class="table-row gray-row">
-                                <td class="column1">1006</td>
-                                <td class="column2">Ольга Николаева</td>
-                                <td class="column3">olga.n@example.com</td>
-                                <td class="column4">Роутер</td>
-                                <td class="column5"><div class="closed status">Закрыта</div></td>
-                                <td class="column6">5 600 ₽</td>
-                                <td class="column7">17.06.2026 14:33</td>
-                                <td class="column8">—</td>
-                                <td class="column9">
-                                    <div class="cell">
-                                        <button class="col-icons">
+                            <tr class="table-body__table-row table-row__gray-row">
+                                <td class="table__column1">1006</td>
+                                <td class="table__column2">Ольга Николаева</td>
+                                <td class="table__column3">olga.n@example.com</td>
+                                <td class="table__column4">Роутер</td>
+                                <td class="table__column5"><div class="status status--closed">Закрыта</div></td>
+                                <td class="table__column6">5 600 ₽</td>
+                                <td class="table__column7">17.06.2026 14:33</td>
+                                <td class="table__column8">—</td>
+                                <td>
+                                    <div class="table__column-cell">
+                                        <button class="column-cell__col-icons">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
                                                 <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
                                             </svg>
                                         </button>
-                                        <button class="col-icons">
+                                        <button class="column-cell__col-icons">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
                                                 <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
@@ -417,24 +417,24 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr class="table-row white-row">
-                                <td class="column1">1008</td>
-                                <td class="column2">Анна Васильева</td>
-                                <td class="column3">anna.v@example.com</td>
-                                <td class="column4">Техник</td>
-                                <td class="column5"><div class="waiting status">Ожидает</div></td>
-                                <td class="column6">1 900 ₽</td>
-                                <td class="column7">19.06.2026 12:22</td>
-                                <td class="column8">3 часа</td>
-                                <td class="column9">
-                                    <div class="cell">
-                                        <button class="col-icons">
+                            <tr class="table-body__table-row table-row__white-row">
+                                <td class="table__column1">1008</td>
+                                <td class="table__column2">Анна Васильева</td>
+                                <td class="table__column3">anna.v@example.com</td>
+                                <td class="table__column4">Техник</td>
+                                <td class="table__column5"><div class="status status--waiting">Ожидает</div></td>
+                                <td class="table__column6">1 900 ₽</td>
+                                <td class="table__column7">19.06.2026 12:22</td>
+                                <td class="table__column8">3 часа</td>
+                                <td>
+                                    <div class="table__column-cell">
+                                        <button class="column-cell__col-icons">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
                                                 <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
                                             </svg>
                                         </button>
-                                        <button class="col-icons">
+                                        <button class="column-cell__col-icons">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
                                                 <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
@@ -447,13 +447,13 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="footer-row">
-                    <div class="select-block">
+                <div class="main-body__footer-container">
+                    <div class="footer-container__page-block">
                         <span>Всего: 128</span>
-                        <div class="table-footer">
-                            <label for="table-button" class="">Строк на странице:
+                        <div class="page-block__select-block">
+                            <label for="table-button">Строк на странице:
                             </label>
-                            <select class="count-page">
+                            <select class="select-block__count-page">
                                 <option value="10">10</option>
                                 <option value="11">11</option>
                                 <option value="12">12</option>
@@ -464,18 +464,18 @@
                             </select>
                         </div>
                     </div>
-                    <div class="page-button-block">
-                        <button class="page-button num-list">‹‹</button>
-                        <button class="page-button num-list">‹</button>
-                        <button class="page-button num-list">1</button>
-                        <button class="page-button num-list">2</button>
-                        <button class="page-button num-list">3</button>
-                        <button class="page-button num-list">4</button>
-                        <button class="page-button num-list">5</button>
-                        <button class="page-button num-list">...</button>
-                        <button class="page-button num-list">13</button>
-                        <button class="page-button num-list">›</button>
-                        <button class="page-button num-list">››</button>
+                    <div class="footer-container__page-button-block">
+                        <button class="page-button-block__button page-button-block__button-num-list">‹‹</button>
+                        <button class="page-button-block__button page-button-block__button-num-list">‹</button>
+                        <button class="page-button-block__button page-button-block__button-num-list">1</button>
+                        <button class="page-button-block__button page-button-block__button-num-list">2</button>
+                        <button class="page-button-block__button page-button-block__button-num-list">3</button>
+                        <button class="page-button-block__button page-button-block__button-num-list">4</button>
+                        <button class="page-button-block__button page-button-block__button-num-list">5</button>
+                        <button class="page-button-block__button page-button-block__button-num-list">...</button>
+                        <button class="page-button-block__button page-button-block__button-num-list">13</button>
+                        <button class="page-button-block__button page-button-block__button-num-list">›</button>
+                        <button class="page-button-block__button page-button-block__button-num-list">››</button>
                     </div>
                 </div>
             </div>
