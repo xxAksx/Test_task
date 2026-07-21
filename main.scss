@@ -455,7 +455,7 @@ select {
     border-collapse: collapse;
     width: 100%;
     padding-right: 24px;
-    &__wrapper {
+    &__table-wrapper {
         padding-left: 24px;
         overflow-y: auto;
         max-height: calc(100% - 140px - 80px);
