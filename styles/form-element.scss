@@ -1,0 +1,59 @@
+.form-element {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 5px;
+    background: none;
+    border: none;
+    &__label {
+        color: #64748B;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17px; /* 141.667% */
+    }
+    &__form-block {
+        color: #334155;
+        border: 1px solid #DBE3EF;
+        border-radius: 8px;
+        cursor: pointer;
+        &--search {
+            width: 198px;
+        }
+        &--status {
+            width: 146px;
+        }
+        &--service-type {
+            width: 146px;
+        }
+        &--period {
+            width: 228px;
+        }
+        &--manager {
+            width: 146px;
+        }
+        &--reset {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 22px;
+            width: 86px;
+            height: 40px;
+            color: #334155;
+            font-weight: 600;
+        }
+    }
+    &__form-ico {
+        position: absolute;
+        top: 32px;
+        right: 10px;
+    }
+    &__form-block:hover,
+    &__form-block:focus {
+        background-color: #e3ebe4;
+        &--reset:hover {
+            background: #2563EB;
+            color: #FFF;
+        }
+    }
+}

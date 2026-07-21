@@ -289,7 +289,7 @@ body {
   color: #FFF;
   cursor: pointer;
 }
-.content__button--accent-color:hover {
+.content__button:hover--accent-color:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -344,6 +344,22 @@ body {
   font-weight: 600;
   line-height: 16px; /* 145.455% */
 }
+.widget__statistic--all {
+  background: #EFF6FF;
+  color: #2563EB;
+}
+.widget__statistic--in-progress {
+  background: #FFF7ED;
+  color: #F97316;
+}
+.widget__statistic--overdue {
+  background: #FEF2F2;
+  color: #EF4444;
+}
+.widget__statistic--closed {
+  background: #F0FDF4;
+  color: #16A34A;
+}
 .widget__indicator {
   display: flex;
   justify-content: center;
@@ -355,19 +371,19 @@ body {
   height: 38px;
   border-radius: 10px;
 }
-.widget__statistic--all, .widget__indicator--all {
+.widget__indicator--all {
   background: #EFF6FF;
   color: #2563EB;
 }
-.widget__statistic--in-progress, .widget__indicator--in-progress {
+.widget__indicator--in-progress {
   background: #FFF7ED;
   color: #F97316;
 }
-.widget__statistic--overdue, .widget__indicator--overdue {
+.widget__indicator--overdue {
   background: #FEF2F2;
   color: #EF4444;
 }
-.widget__statistic--closed, .widget__indicator--closed {
+.widget__indicator--closed {
   background: #F0FDF4;
   color: #16A34A;
 }
@@ -423,13 +439,10 @@ body {
   top: 32px;
   right: 10px;
 }
-.form-element__form-block:hover {
+.form-element__form-block:hover, .form-element__form-block:focus {
   background-color: #e3ebe4;
 }
-.form-element__form-block:focus {
-  background-color: #e3ebe4;
-}
-.form-element__form-block--reset:hover {
+.form-element__form-block:hover--reset:hover, .form-element__form-block:focus--reset:hover {
   background: #2563EB;
   color: #FFF;
 }
@@ -474,23 +487,23 @@ select {
   overflow-y: auto;
   height: 300px;
 }
-.table__cell, .table__th--id, .table__th--client, .table__th--email, .table__th--status, .table__th--amount, .table__th--sla {
+.table__cell, .table__th--email {
   color: #475569;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 17px; /* 141.667% */
 }
-.table__cell--id {
+.table__cell--id, .table__th--id {
   padding-left: 12px;
   width: 40px;
   color: #334155;
 }
-.table__cell--client {
+.table__cell--client, .table__th--client {
   padding-left: 12px;
   color: #0F172A;
 }
-.table__cell--status, .table__cell--amount, .table__cell--sla {
+.table__cell--status, .table__cell--amount, .table__cell--sla, .table__th--status, .table__th--amount, .table__th--sla {
   font-weight: 600;
 }
 .table__button-container {

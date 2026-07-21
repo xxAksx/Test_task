@@ -1,0 +1,41 @@
+.user-panel {
+    display: flex;
+    align-items: center;
+    &__avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #EEF2FF;
+        width: 40px;
+        height: 40px;
+        margin-left: 22px;
+        border-radius: 50%;
+        color: #475569;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 19px; /* 146.154% */
+        cursor: pointer;
+    }
+    &__user {
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+    }
+    &__user-name {
+        width: 100px;
+        color: #1E293B;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 19px; /* 146.154% */
+    }
+    &__user-role {
+        width: 100px;
+        color: #64748B;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px; /* 141.667% */
+    }
+}

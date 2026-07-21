@@ -1,0 +1,114 @@
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    padding-right: 24px;
+    &__table-wrapper {
+        padding-left: 24px;
+        overflow-y: auto;
+        max-height: calc(100% - 140px - 80px);
+    }
+    &__head {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom: 1px solid #E8EDF5;
+    }
+    &__body {
+        overflow-y: auto;
+        height: 300px;
+    }
+    &__cell,
+    &__th--email {
+        color: #475569;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px; /* 141.667% */
+    }
+    &__cell--id,
+    &__th--id {
+        padding-left: 12px;
+        width: 40px;
+        color: #334155;
+    }
+    &__cell--client,
+    &__th--client {
+        padding-left: 12px;
+        color: #0F172A;
+    }
+    &__cell--status,
+    &__cell--amount,
+    &__cell--sla,
+    &__th--status,
+    &__th--amount,
+    &__th--sla {
+        font-weight: 600;
+    }
+    &__button-container {
+        display: flex;
+        padding: 12px;
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 26px;
+        height: 26px;
+        border-radius: 7px;
+        border: 1px solid #DBE3EF;
+        background: #FFF;
+        margin-right: 6px;
+    }
+    &__button:hover {
+        background: #2563EB;
+        cursor: pointer;
+    }
+    &__status {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 94px;
+        height: 24px;
+        border-radius: 12px;
+        &--active {
+            color: #15803D;
+            background: #DCFCE7;
+        }
+        &--in-progress {
+            color: #2563EB;
+            background: #DBEAFE;
+        }
+        &--waiting {
+            color: #C2410C;
+            background: #FFEDD5;
+        }
+        &--closed {
+            color: #475569;
+            background: #E5E7EB;
+        }
+        &--overdue {
+            color: #DC2626;
+            background: #FEE2E2;
+        }   
+    } 
+    &__th {
+        position: sticky;
+        background: #F8FAFC;
+        height: 44px;
+        top: 0px;
+        z-index: 1;
+        text-align: start;
+        color: #475569;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 17px; /* 141.667% */
+    }
+    &__table-row {
+        background: #FFF;
+        height: 57px;
+        border-bottom: 1px solid #E8EDF5;
+    }
+    &__table-row:nth-child(even) {
+        background: #f7fafc;
+    }
+}

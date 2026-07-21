@@ -1,0 +1,19 @@
+input,
+select {
+    padding: 0px 12px;
+    height: 40px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    border-radius: 8px;
+    border: 1px solid #DBE3EF;
+}
+select {
+    background-position: calc(100% - 8px) 12px;
+    background-size: 16px;
+    appearance: none;
+    padding-right: 1.2em;
+    background-repeat: no-repeat;
+    background-image: url(https://avatars.mds.yandex.net/i?id=bc1ded165eb49d32de08efeb8d2454bedeaf3950-4936286-images-thumbs&n=13);
+}

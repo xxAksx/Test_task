@@ -1,0 +1,92 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
+    &__main {
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 72px);
+        background: #F5F7FB;
+        padding: 24px;
+    }
+    &__widget-container {
+        display: flex;
+        justify-content: space-between;
+        height: 172px;
+    }
+    &__main-body {
+        height: calc(100% - 172px);
+        border-radius: 14px;
+        border: 1px solid #E8EDF5;
+        background: #FFF;
+        box-shadow: 0 10px 32px 0 rgba(15, 23, 42, 0.04);
+    }
+    &__main-body-head {
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 22px 0px 24px;
+    }
+    &__title-container {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        color: #0F172A;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26px; /* 144.444% */
+    }
+    &__subtitle {
+        color: #64748B;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px; /* 141.667% */
+    }
+    &__button-block {
+        display: flex;
+        gap: 10px;
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 108px;
+        height: 40px;
+        border-radius: 8px;
+        border: 1px solid #DBE3EF;
+        background: #FFF;
+        color: #334155;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 19px; /* 146.154% */
+        transition: transform 0.4s;
+        &--accent-color {
+            gap: 10px;
+            background: #2563EB;
+            color: #FFF;
+        }
+    }
+    &__button:hover {
+        transform: scale(1.1);
+        background: #2563EB;
+        color: #FFF;
+        cursor: pointer;
+        &--accent-color:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    }
+    &__navigation {
+        display: flex;
+        gap: 12px;
+        padding: 21px 0px 18px 24px;
+    }
+    &__navigation-form {
+        display: flex;
+        gap: 12px;
+    }
+}
