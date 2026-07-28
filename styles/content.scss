@@ -1,3 +1,5 @@
+$button-color: #2563EB;
+
 .content {
     display: flex;
     flex-direction: column;
@@ -66,13 +68,13 @@
         transition: transform 0.4s;
         &--accent-color {
             gap: 10px;
-            background: #2563EB;
+            background: $button-color;
             color: #FFF;
         }
     }
     &__button:hover {
         transform: scale(1.1);
-        background: #2563EB;
+        background: $button-color;
         color: #FFF;
         cursor: pointer;
         &--accent-color:hover {

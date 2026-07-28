@@ -487,23 +487,23 @@ select {
   overflow-y: auto;
   height: 300px;
 }
-.table__cell, .table__th--email {
+.table__cell {
   color: #475569;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 17px; /* 141.667% */
 }
-.table__cell--id, .table__th--id {
+.table__cell--id {
   padding-left: 12px;
   width: 40px;
   color: #334155;
 }
-.table__cell--client, .table__th--client {
+.table__cell--client {
   padding-left: 12px;
   color: #0F172A;
 }
-.table__cell--status, .table__cell--amount, .table__cell--sla, .table__th--status, .table__th--amount, .table__th--sla {
+.table__cell--status, .table__cell--amount, .table__cell--sla {
   font-weight: 600;
 }
 .table__button-container {

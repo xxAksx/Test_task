@@ -1,3 +1,5 @@
+$item-width: 224px;
+$item-heigth: 44px;
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -28,8 +30,8 @@
         position: relative;
         display: flex;
         align-items: center;
-        width: 224px;
-        height: 44px;
+        width: $item-width;
+        height: $item-heigth;
         border-radius: 10px;
         background: #172033;
         padding-left: 18px;
@@ -74,8 +76,8 @@
         align-items: center;
         position: absolute;
         bottom: 1%;
-        width: 224px;
-        height: 44px;
+        width: $item-width;
+        height: $item-heigth;
         border-radius: 10px;
         gap: 10px;
         color: #CBD5E1;

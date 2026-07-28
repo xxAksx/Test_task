@@ -246,15 +246,15 @@
                 <div class="table__table-wrapper">
                     <table class="table">
                         <thead class="table__head">
-                            <th class="table__cell--id table__th--id">№</th>
-                            <th class="table__cell--client table__th--client">Клиент</th>
+                            <th class="table__cell--id table__th">№</th>
+                            <th class="table__cell--client table__th">Клиент</th>
                             <th class="table__cell table__th">Email</th>
                             <th class="table__cell table__th">Услуга</th>
-                            <th class="table__cell--status table__th--status">Статус</th>
-                            <th class="table__cell--amount table__th--amount">Сумма</th>
+                            <th class="table__cell--status table__th">Статус</th>
+                            <th class="table__cell--amount table__th">Сумма</th>
                             <th class="table__cell table__th">Дата создания</th>
-                            <th class="table__cell--sla table__th--sla">SLA</th>
-                            <th class="table__cell--actions table__th--actions">Действия</th>
+                            <th class="table__cell--sla table__th">SLA</th>
+                            <th class="table__cell--actions table__th">Действия</th>
                         </thead>
                         <tbody class="table__body">
                             <tr class="table__table-row">
@@ -401,6 +401,33 @@
                                 <td class="table__cell table__cell--amount">5 600 ₽</td>
                                 <td class="table__cell">17.06.2026 14:33</td>
                                 <td class="table__cell table__cell--sla">—</td>
+                                <td class="table__cell">
+                                    <div class="table__button-container">
+                                        <button class="table__button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M3.33337 12.6667L5.86671 12.1333L12 6L10 4L3.86671 10.1333L3.33337 12.6667Z" stroke="#334155" stroke-width="1.8" stroke-linejoin="round"/>
+                                                <path d="M9.19995 4.79999L11.2 6.79999" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
+                                            </svg>
+                                        </button>
+                                        <button class="table__button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8.00003 5.13334C8.62596 5.13334 9.13337 4.62592 9.13337 4C9.13337 3.37408 8.62596 2.86667 8.00003 2.86667C7.37411 2.86667 6.8667 3.37408 6.8667 4C6.8667 4.62592 7.37411 5.13334 8.00003 5.13334Z" fill="#334155"/>
+                                                <path d="M8.00003 9.13334C8.62596 9.13334 9.13337 8.62592 9.13337 8C9.13337 7.37408 8.62596 6.86667 8.00003 6.86667C7.37411 6.86667 6.8667 7.37408 6.8667 8C6.8667 8.62592 7.37411 9.13334 8.00003 9.13334Z" fill="#334155"/>
+                                                <path d="M8.00003 13.1333C8.62596 13.1333 9.13337 12.6259 9.13337 12C9.13337 11.3741 8.62596 10.8667 8.00003 10.8667C7.37411 10.8667 6.8667 11.3741 6.8667 12C6.8667 12.6259 7.37411 13.1333 8.00003 13.1333Z" fill="#334155"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table__table-row">
+                                <td class="table__cell table__cell--id">1007</td>
+                                <td class="table__cell table__cell--client">Сергей Морозов</td>
+                                <td class="table__cell">morozov@example.com</td>
+                                <td class="table__cell">Подключение</td>
+                                <td class="table__cell table__cell--status"><div class="table__status table__status--in-progress">В работе</div></td>
+                                <td class="table__cell table__cell--amount">10 300 ₽</td>
+                                <td class="table__cell">18.06.2026 09:40</td>
+                                <td class="table__cell table__cell--sla">1 день</td>
                                 <td class="table__cell">
                                     <div class="table__button-container">
                                         <button class="table__button">
