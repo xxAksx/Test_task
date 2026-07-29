@@ -1,3 +1,4 @@
+@use 'variables.scss';
 $item-width: 224px;
 $item-heigth: 44px;
 .sidebar {
@@ -5,7 +6,7 @@ $item-heigth: 44px;
     flex-direction: column;
     height: 100%; 
     width: 272px; 
-    background-color: #0F172A; 
+    background-color: $sidebar-background-color; 
     &__header {
         display: flex;
         align-items: center;
@@ -45,13 +46,13 @@ $item-heigth: 44px;
         transition: transform 0.3s ;
         &--active {
             transform: scale(1.1);
-            background: #2563EB;
+            background: $accent-button-color;
             color: #FFF;
         }
     }
     &__item:hover {
         transform: scale(1.1);
-        background: #2563EB;
+        background: $accent-button-color;
         color: #FFF;
         cursor: pointer;
     }

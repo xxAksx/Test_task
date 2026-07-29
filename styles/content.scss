@@ -1,5 +1,4 @@
-$button-color: #2563EB;
-
+@use 'variables.scss';
 .content {
     display: flex;
     flex-direction: column;
@@ -21,7 +20,7 @@ $button-color: #2563EB;
         height: calc(100% - 172px);
         border-radius: 14px;
         border: 1px solid #E8EDF5;
-        background: #FFF;
+        background: $light-backgrount-color;
         box-shadow: 0 10px 32px 0 rgba(15, 23, 42, 0.04);
     }
     &__main-body-head {
@@ -59,7 +58,7 @@ $button-color: #2563EB;
         height: 40px;
         border-radius: 8px;
         border: 1px solid #DBE3EF;
-        background: #FFF;
+        background: $light-backgrount-color;
         color: #334155;
         font-size: 13px;
         font-style: normal;
@@ -69,7 +68,7 @@ $button-color: #2563EB;
         &--accent-color {
             gap: 10px;
             background: $button-color;
-            color: #FFF;
+            color: $light-backgrount-color;
         }
     }
     &__button:hover {
