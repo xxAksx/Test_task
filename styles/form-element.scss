@@ -1,3 +1,4 @@
+@use 'variables.scss' as *;
 .form-element {
     display: flex;
     flex-direction: column;
@@ -52,8 +53,8 @@
     &__form-block:focus {
         background-color: #e3ebe4;
         &--reset:hover {
-            background: #2563EB;
-            color: #FFF;
+            background: $accent-button-color;
+            color: $light-backgrount-color;
         }
     }
 }

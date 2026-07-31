@@ -1,3 +1,4 @@
+@use 'variables.scss' as *;
 .table {
     border-collapse: collapse;
     width: 100%;
@@ -10,7 +11,7 @@
     &__head {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        border-bottom: 1px solid #E8EDF5;
+        border-bottom: 1px solid $border-color;
     }
     &__body {
         overflow-y: auto;
@@ -49,11 +50,11 @@
         height: 26px;
         border-radius: 7px;
         border: 1px solid #DBE3EF;
-        background: #FFF;
+        background: $light-backgrount-color;
         margin-right: 6px;
     }
     &__button:hover {
-        background: #2563EB;
+        background: $accent-button-color;
         cursor: pointer;
     }
     &__status {
@@ -64,24 +65,24 @@
         height: 24px;
         border-radius: 12px;
         &--active {
-            color: #15803D;
-            background: #DCFCE7;
+            color: $active-status-color-text;
+            background: $active-status-color-background;
         }
         &--in-progress {
-            color: #2563EB;
-            background: #DBEAFE;
+            color: $in-progress-status-color-text;
+            background: $in-progress-status-color-background;
         }
         &--waiting {
-            color: #C2410C;
-            background: #FFEDD5;
+            color: $waiting-status-color-text;
+            background: $waiting-status-color-background;
         }
         &--closed {
-            color: #475569;
-            background: #E5E7EB;
+            color: $closed-status-color-text;
+            background: $closed-status-color-background;
         }
         &--overdue {
-            color: #DC2626;
-            background: #FEE2E2;
+            color: $overdue-status-color-text;
+            background: $overdue-status-color-background;
         }   
     } 
     &__th {
@@ -98,9 +99,9 @@
         line-height: 17px; /* 141.667% */
     }
     &__table-row {
-        background: #FFF;
+        background: $light-backgrount-color;
         height: 57px;
-        border-bottom: 1px solid #E8EDF5;
+        border-bottom: 1px solid $border-color;
     }
     &__table-row:nth-child(even) {
         background: #f7fafc;

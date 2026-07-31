@@ -1,3 +1,4 @@
+@use 'variables.scss' as *;
 .widget {
     display: flex;
     flex-direction: column;
@@ -8,8 +9,8 @@
     width: 260px;
     height: 124px;
     border-radius: 14px;
-    border: 1px solid #E8EDF5;
-    background: #FFF;
+    border: 1px solid $border-color;
+    background: $light-backgrount-color;
     box-shadow: 0 10px 28px 0 rgba(15, 23, 42, 0.05);
     &__title {
         width: 150px;
@@ -38,20 +39,20 @@
         font-weight: 600;
         line-height: 16px; /* 145.455% */
         &--all {
-            background: #EFF6FF;
-            color: #2563EB;
+            background: $in-progress-status-color-background;
+            color: $in-progress-status-color-text;
         }
         &--in-progress {
-            background: #FFF7ED;
-            color: #F97316;
+            background: $waiting-status-color-background;
+            color: $waiting-status-color-text;
         }
         &--overdue {
-            background: #FEF2F2;
-            color: #EF4444;
+            background: $overdue-status-color-background;
+            color: $overdue-status-color-text;
         }
         &--closed {
-            background: #F0FDF4;
-            color: #16A34A;
+            background: $active-status-color-background;
+            color: $active-status-color-text;
         }
     }
     &__indicator {
@@ -65,20 +66,16 @@
         height: 38px;
         border-radius: 10px;
         &--all {
-            background: #EFF6FF;
-            color: #2563EB;
+            background: $in-progress-status-color-background;
         }
         &--in-progress {
-            background: #FFF7ED;
-            color: #F97316;
+            background: $waiting-status-color-background;
         }
         &--overdue {
-            background: #FEF2F2;
-            color: #EF4444;
+            background: $overdue-status-color-background;
         }
         &--closed {
-            background: #F0FDF4;
-            color: #16A34A;
+            background: $active-status-color-background;
         }
     }
 }

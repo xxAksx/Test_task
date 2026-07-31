@@ -1,3 +1,4 @@
+@use 'variables.scss' as *;
 .paginator {
     display: flex;
     &__button {
@@ -9,7 +10,7 @@
         height: 32px;
         border-radius: 8px;
         border: 1px solid #DBE3EF;
-        background: #FFF;
+        background: $light-backgrount-color;
         color: #334155;
         font-size: 12px;
         font-style: normal;
@@ -17,10 +18,9 @@
         line-height: 17px; /* 141.667% */
         cursor: pointer;
         border-radius: 8px;
-        border: 1px solid #DBE3EF;
     }
     &__button:hover {
-        background: #2563EB;
-        color: #FFF;
+        background: $accent-button-color;
+        color: $light-backgrount-color;
     }
 }
