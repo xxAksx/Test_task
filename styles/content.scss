@@ -20,7 +20,7 @@
         height: calc(100% - 172px);
         border-radius: 14px;
         border: 1px solid $border-color;
-        background: $light-backgrount-color;
+        background: $secondary-color;
         box-shadow: 0 10px 32px 0 rgba(15, 23, 42, 0.04);
     }
     &__main-body-head {
@@ -58,7 +58,7 @@
         height: 40px;
         border-radius: 8px;
         border: 1px solid #DBE3EF;
-        background: $light-backgrount-color;
+        background: $secondary-color;
         color: #334155;
         font-size: 13px;
         font-style: normal;
@@ -67,13 +67,13 @@
         transition: transform 0.4s;
         &--accent-color {
             gap: 10px;
-            background: $accent-button-color;
-            color: $light-backgrount-color;
+            background: $primary-color;
+            color: $secondary-color;
         }
     }
     &__button:hover {
         transform: scale(1.1);
-        background: $accent-button-color;
+        background: $primary-color;
         color: #FFF;
         cursor: pointer;
         &--accent-color:hover {

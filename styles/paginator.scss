@@ -10,7 +10,7 @@
         height: 32px;
         border-radius: 8px;
         border: 1px solid #DBE3EF;
-        background: $light-backgrount-color;
+        background: $secondary-color;
         color: #334155;
         font-size: 12px;
         font-style: normal;
@@ -20,7 +20,7 @@
         border-radius: 8px;
     }
     &__button:hover {
-        background: $accent-button-color;
-        color: $light-backgrount-color;
+        background: $primary-color;
+        color: $secondary-color;
     }
 }

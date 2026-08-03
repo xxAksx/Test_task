@@ -50,11 +50,11 @@
         height: 26px;
         border-radius: 7px;
         border: 1px solid #DBE3EF;
-        background: $light-backgrount-color;
+        background: $secondary-color;
         margin-right: 6px;
     }
     &__button:hover {
-        background: $accent-button-color;
+        background: $primary-color;
         cursor: pointer;
     }
     &__status {
@@ -65,24 +65,24 @@
         height: 24px;
         border-radius: 12px;
         &--active {
-            color: $active-status-color-text;
-            background: $active-status-color-background;
+            color: $success-color-text;
+            background: $success-color-background;
         }
         &--in-progress {
-            color: $in-progress-status-color-text;
-            background: $in-progress-status-color-background;
+            color: $info-color-text;
+            background: $info-color-background;
         }
         &--waiting {
-            color: $waiting-status-color-text;
-            background: $waiting-status-color-background;
+            color: $warning-color-text;
+            background: $warning-color-background;
         }
         &--closed {
             color: $closed-status-color-text;
             background: $closed-status-color-background;
         }
         &--overdue {
-            color: $overdue-status-color-text;
-            background: $overdue-status-color-background;
+            color: $danger-color-text;
+            background: $danger-color-background;
         }   
     } 
     &__th {
@@ -99,7 +99,7 @@
         line-height: 17px; /* 141.667% */
     }
     &__table-row {
-        background: $light-backgrount-color;
+        background: $secondary-color;
         height: 57px;
         border-bottom: 1px solid $border-color;
     }

@@ -1,22 +1,22 @@
-$accent-button-color: #2563EB !default;
-$light-backgrount-color: #FFF !default;
+$primary-color: #2563EB !default;
+$secondary-color: #FFF !default;
 $sidebar-background-color: #0F172A !default;
 $sidebar-head-background-color: #1E293B !default;
 $sidebar-item-background-color: #172033 !default;
 
-$active-status-color-text: #15803D !default; 
-$active-status-color-background: #DCFCE7 !default;
+$success-color-text: #15803D !default; 
+$success-color-background: #DCFCE7 !default;
 
-$in-progress-status-color-text: #2563EB !default;
-$in-progress-status-color-background: #DBEAFE !default;
+$info-color-text: #2563EB !default;
+$info-color-background: #DBEAFE !default;
 
-$waiting-status-color-text: #C2410C !default;
-$waiting-status-color-background: #FFEDD5 !default;
+$warning-color-text: #C2410C !default;
+$warning-color-background: #FFEDD5 !default;
 
 $closed-status-color-text: #475569 !default;
 $closed-status-color-background: #E5E7EB !default;
 
-$overdue-status-color-text: #DC2626 !default;
-$overdue-status-color-background: #FEE2E2 !default;
+$danger-color-text: #DC2626 !default;
+$danger-color-background: #FEE2E2 !default;
 
 $border-color: #E8EDF5 !default;

@@ -10,7 +10,7 @@
     height: 124px;
     border-radius: 14px;
     border: 1px solid $border-color;
-    background: $light-backgrount-color;
+    background: $secondary-color;
     box-shadow: 0 10px 28px 0 rgba(15, 23, 42, 0.05);
     &__title {
         width: 150px;
@@ -39,20 +39,20 @@
         font-weight: 600;
         line-height: 16px; /* 145.455% */
         &--all {
-            background: $in-progress-status-color-background;
-            color: $in-progress-status-color-text;
+            background: $info-color-background;
+            color: $info-color-text;
         }
         &--in-progress {
-            background: $waiting-status-color-background;
-            color: $waiting-status-color-text;
+            background: $warning-color-background;
+            color: $warning-color-text;
         }
         &--overdue {
-            background: $overdue-status-color-background;
-            color: $overdue-status-color-text;
+            background: $danger-color-background;
+            color: $danger-color-text;
         }
         &--closed {
-            background: $active-status-color-background;
-            color: $active-status-color-text;
+            background: $success-color-background;
+            color: $success-color-text;
         }
     }
     &__indicator {
@@ -66,16 +66,16 @@
         height: 38px;
         border-radius: 10px;
         &--all {
-            background: $in-progress-status-color-background;
+            background: $info-color-background;
         }
         &--in-progress {
-            background: $waiting-status-color-background;
+            background: $warning-color-background;
         }
         &--overdue {
-            background: $overdue-status-color-background;
+            background: $danger-color-background;
         }
         &--closed {
-            background: $active-status-color-background;
+            background: $success-color-background;
         }
     }
 }

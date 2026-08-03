@@ -53,8 +53,8 @@
     &__form-block:focus {
         background-color: #e3ebe4;
         &--reset:hover {
-            background: $accent-button-color;
-            color: $light-backgrount-color;
+            background: $primary-color;
+            color: $secondary-color;
         }
     }
 }
