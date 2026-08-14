@@ -510,5 +510,145 @@
             </div>
         </main>
     </div>
+    <div class="modal-window--enabled">
+        <div class="modal-window__body">
+            <header class="modal-window__header">
+                <div class="modal-window__header-text">
+                    <h2 class="modal-window__title">Редактирование заявки #1004</h2>
+                    <p class="modal-window__subtitle">Карточка клиента и параметры обращения</p>
+                </div>
+                <button class="modal-window__close" type="button" aria-label="Закрыть">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M4.5 4.5L13.5 13.5M13.5 4.5L4.5 13.5" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </header>
+            <div class="modal-window__content">
+                <nav class="modal-window__sidebar">
+                    <button class="modal-window__nav-item modal-window__nav-item--active" type="button">
+                        <svg class="modal-window__nav-indicator" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                            <circle cx="4" cy="4" r="3.3" stroke-width="1.4"/>
+                        </svg>
+                        Основное
+                    </button>
+                    <button class="modal-window__nav-item" type="button">
+                        <svg class="modal-window__nav-indicator" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                            <circle cx="4" cy="4" r="3.3" stroke-width="1.4"/>
+                        </svg>
+                        Клиент
+                    </button>
+                    <button class="modal-window__nav-item" type="button">
+                        <svg class="modal-window__nav-indicator" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                            <circle cx="4" cy="4" r="3.3" stroke-width="1.4"/>
+                        </svg>
+                        Услуга
+                    </button>
+                    <button class="modal-window__nav-item" type="button">
+                        <svg class="modal-window__nav-indicator" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                            <circle cx="4" cy="4" r="3.3" stroke-width="1.4"/>
+                        </svg>
+                        История
+                    </button>
+                    <button class="modal-window__nav-item" type="button">
+                        <svg class="modal-window__nav-indicator" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                            <circle cx="4" cy="4" r="3.3" stroke-width="1.4"/>
+                        </svg>
+                        Документы
+                    </button>
+                    <button class="modal-window__nav-item" type="button">
+                        <svg class="modal-window__nav-indicator" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                            <circle cx="4" cy="4" r="3.3" stroke-width="1.4"/>
+                        </svg>
+                        Безопасность
+                    </button>
+                </nav>
+                <div class="modal-window__main">
+                    <div class="modal-window__section-head">
+                        <h3 class="modal-window__section-title">Основная информация</h3>
+                        <p class="modal-window__section-subtitle">Проверьте данные клиента и параметры обращения перед сохранением</p>
+                    </div>
+                    <form class="modal-window__form">
+                        <div class="modal-window__form-row">
+                            <div class="modal-window__field">
+                                <label class="modal-window__label" for="modal-first-name">Имя клиента <span class="modal-window__required">*</span></label>
+                                <input class="modal-window__input" type="text" id="modal-first-name" value="Екатерина">
+                            </div>
+                            <div class="modal-window__field">
+                                <label class="modal-window__label" for="modal-last-name">Фамилия <span class="modal-window__required">*</span></label>
+                                <input class="modal-window__input" type="text" id="modal-last-name" value="Кузнецова">
+                            </div>
+                        </div>
+                        <div class="modal-window__form-row">
+                            <div class="modal-window__field">
+                                <label class="modal-window__label" for="modal-email">Email <span class="modal-window__required">*</span></label>
+                                <input class="modal-window__input" type="email" id="modal-email" value="ekaterina.k@example.com">
+                            </div>
+                            <div class="modal-window__field">
+                                <label class="modal-window__label" for="modal-phone">Телефон</label>
+                                <input class="modal-window__input" type="tel" id="modal-phone" value="+7 921 333-42-18">
+                            </div>
+                        </div>
+                        <div class="modal-window__form-row">
+                            <div class="modal-window__field">
+                                <label class="modal-window__label" for="modal-service">Тип услуги <span class="modal-window__required">*</span></label>
+                                <select class="modal-window__select" id="modal-service">
+                                    <option value="Переезд подключения" selected>Переезд подключения</option>
+                                    <option value="Интернет">Интернет</option>
+                                    <option value="IPTV пакет">IPTV пакет</option>
+                                    <option value="Роутер">Роутер</option>
+                                </select>
+                            </div>
+                            <div class="modal-window__field">
+                                <label class="modal-window__label" for="modal-status">Статус <span class="modal-window__required">*</span></label>
+                                <select class="modal-window__select" id="modal-status">
+                                    <option value="Просрочена" selected>Просрочена</option>
+                                    <option value="Активна">Активна</option>
+                                    <option value="В работе">В работе</option>
+                                    <option value="Ожидает">Ожидает</option>
+                                    <option value="Закрыта">Закрыта</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-window__form-row">
+                            <div class="modal-window__field modal-window__field--date">
+                                <label class="modal-window__label" for="modal-created-at">Дата создания</label>
+                                <input class="modal-window__input" type="text" id="modal-created-at" value="15.06.2026 10:20">
+                                <svg class="modal-window__date-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M5.33334 2.66667V4.66667M10.6667 2.66667V4.66667M2.66667 6.66667H13.3333M3.33334 4H12.6667C13.403 4 14 4.59695 14 5.33333V12.6667C14 13.403 13.403 14 12.6667 14H3.33334C2.59696 14 2 13.403 2 12.6667V5.33333C2 4.59695 2.59696 4 3.33334 4Z" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="modal-window__field">
+                                <label class="modal-window__label" for="modal-manager">Ответственный</label>
+                                <select class="modal-window__select" id="modal-manager">
+                                    <option value="Анна Васильева" selected>Анна Васильева</option>
+                                    <option value="Иван Петров">Иван Петров</option>
+                                    <option value="Мария Сидорова">Мария Сидорова</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-window__field modal-window__field--full">
+                            <label class="modal-window__label" for="modal-comment">Комментарий менеджера</label>
+                            <textarea class="modal-window__textarea" id="modal-comment">Клиент просит перенести подключение на следующую неделю. Нужно согласовать новый срок с технической службой.</textarea>
+                        </div>
+                        <div class="modal-window__alert">
+                            <svg class="modal-window__alert-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <circle cx="9" cy="9" r="7.5" stroke="#EA580C" stroke-width="1.5"/>
+                                <path d="M9 5.5V9.5" stroke="#EA580C" stroke-width="1.5" stroke-linecap="round"/>
+                                <circle cx="9" cy="12.2" r="0.9" fill="#EA580C"/>
+                            </svg>
+                            <div class="modal-window__alert-text">
+                                <span class="modal-window__alert-title">SLA нарушен на 1 день</span>
+                                <span class="modal-window__alert-description">Назначьте ответственного и согласуйте новый срок обработки.</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer class="modal-window__footer">
+                <button class="modal-window__button modal-window__button--secondary" type="button">Отмена</button>
+                <button class="modal-window__button modal-window__button--primary" type="button">Сохранить</button>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
