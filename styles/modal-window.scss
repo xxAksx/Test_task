@@ -1,5 +1,9 @@
 @use 'variables.scss' as *;
 
+body.modal-open {
+    overflow: hidden;
+}
+
 .modal-window--enabled {
     position: fixed;
     inset: 0;
