@@ -1,12 +1,16 @@
 @use 'variables.scss' as *;
 $item-width: 224px;
 $item-heigth: 44px;
+
 .sidebar {
     display: flex;
     flex-direction: column;
     height: 100%; 
     width: 272px; 
-    background-color: $sidebar-background-color; 
+    background-color: $sidebar-background-color;
+    &--disabled {
+        width: 85px;
+    } 
     &__header {
         display: flex;
         align-items: center;
@@ -49,6 +53,9 @@ $item-heigth: 44px;
             background: $primary-color;
             color: $secondary-color;
         }
+        &--disabled {
+            width: 45px;
+        }
     }
     &__item:hover {
         transform: scale(1.1);
@@ -89,6 +96,10 @@ $item-heigth: 44px;
         border: none;
         background: none;
         cursor: pointer;
+        &--disabled {
+            width: 40px;
+            transform: rotate(180deg)
+        }
     }
     &__collapse:hover {
         color: $secondary-color;

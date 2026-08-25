@@ -123,6 +123,9 @@ body {
   width: 272px;
   background-color: #0F172A;
 }
+.sidebar--disabled {
+  width: 85px;
+}
 .sidebar__header {
   display: flex;
   align-items: center;
@@ -166,6 +169,9 @@ body {
   background: #2563EB;
   color: #FFF;
 }
+.sidebar__item--disabled {
+  width: 45px;
+}
 .sidebar__item:hover {
   transform: scale(1.1);
   background: #2563EB;
@@ -205,6 +211,10 @@ body {
   border: none;
   background: none;
   cursor: pointer;
+}
+.sidebar__collapse--disabled {
+  width: 40px;
+  transform: rotate(180deg);
 }
 .sidebar__collapse:hover {
   color: #FFF;
