@@ -1,15 +1,22 @@
+@use 'variables.scss' as *;
+$item-width: 224px;
+$item-heigth: 44px;
+
 .sidebar {
     display: flex;
     flex-direction: column;
     height: 100%; 
     width: 272px; 
-    background-color: #0F172A; 
+    background-color: $sidebar-background-color;
+    &--disabled {
+        width: 85px;
+    } 
     &__header {
         display: flex;
         align-items: center;
         height: 80px;
-        border-bottom: 1px solid #1E293B;
-        color: #FFF;
+        border-bottom: 1px solid $sidebar-head-background-color;
+        color: $secondary-color;
         padding-left: 32px;
         font-size: 18px;
         font-style: normal;
@@ -28,10 +35,10 @@
         position: relative;
         display: flex;
         align-items: center;
-        width: 224px;
-        height: 44px;
+        width: $item-width;
+        height: $item-heigth;
         border-radius: 10px;
-        background: #172033;
+        background: $sidebar-item-background-color;
         padding-left: 18px;
         gap: 18px;
         border: none;
@@ -43,14 +50,17 @@
         transition: transform 0.3s ;
         &--active {
             transform: scale(1.1);
-            background: #2563EB;
-            color: #FFF;
+            background: $primary-color;
+            color: $secondary-color;
+        }
+        &--disabled {
+            width: 45px;
         }
     }
     &__item:hover {
         transform: scale(1.1);
-        background: #2563EB;
-        color: #FFF;
+        background: $primary-color;
+        color: $secondary-color;
         cursor: pointer;
     }
     &__counter {
@@ -63,19 +73,23 @@
         height: 26px;
         border-radius: 13px;
         background: #475569;
-        color: #FFF;
+        color: $secondary-color;
         font-size: 11px;
         font-style: normal;
         font-weight: 700;
         line-height: 16px; /* 145.455% */
+        &--active {
+            background: $secondary-color;
+            color: $primary-color;
+        }
     }
     &__collapse {
         display: flex;
         align-items: center;
         position: absolute;
         bottom: 1%;
-        width: 224px;
-        height: 44px;
+        width: $item-width;
+        height: $item-heigth;
         border-radius: 10px;
         gap: 10px;
         color: #CBD5E1;
@@ -86,8 +100,12 @@
         border: none;
         background: none;
         cursor: pointer;
+        &--disabled {
+            width: 40px;
+            transform: rotate(180deg)
+        }
     }
     &__collapse:hover {
-        color: #FFF;
+        color: $secondary-color;
     }
 }

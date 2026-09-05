@@ -1,3 +1,4 @@
+$user-info-width: 100px;
 .user-panel {
     display: flex;
     align-items: center;
@@ -23,7 +24,7 @@
         padding: 12px;
     }
     &__user-name {
-        width: 100px;
+        width: $user-info-width;
         color: #1E293B;
         font-size: 13px;
         font-style: normal;
@@ -31,7 +32,7 @@
         line-height: 19px; /* 146.154% */
     }
     &__user-role {
-        width: 100px;
+        width: $user-info-width;
         color: #64748B;
         font-size: 12px;
         font-style: normal;

@@ -1,3 +1,4 @@
+@use 'variables.scss' as *;
 .footer-container {
     display: flex;
     align-items: center;
@@ -5,7 +6,7 @@
     height: 44px;
     margin-left: 24px;
     margin-right: 24px;
-    border-top: 1px solid #E8EDF5;
+    border-top: 1px solid $border-color;
     position: relative;
     &__page-block {
         display: flex;
