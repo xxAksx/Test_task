@@ -16,31 +16,25 @@
         overflow-y: auto;
         height: 300px;
     }
-    &__cell,
-    &__th--email {
+    &__cell {
         color: #475569;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: 17px; /* 141.667% */
     }
-    &__cell--id,
-    &__th--id {
+    &__cell--id {
         padding-left: 12px;
         width: 40px;
         color: #334155;
     }
-    &__cell--client,
-    &__th--client {
+    &__cell--client {
         padding-left: 12px;
         color: #0F172A;
     }
     &__cell--status,
     &__cell--amount,
-    &__cell--sla,
-    &__th--status,
-    &__th--amount,
-    &__th--sla {
+    &__cell--sla {
         font-weight: 600;
     }
     &__button-container {
